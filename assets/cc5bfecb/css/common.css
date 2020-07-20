@@ -1,0 +1,440 @@
+.notifyjs-corner {
+    z-index: 99999!important;
+}
+
+.notifyjs-bootstrap-success, .notifyjs-bootstrap-error, .notifyjs-bootstrap-info, .notifyjs-bootstrap-warning {
+    background-image: none!important;
+}
+
+.notifyjs-bootstrap-base {
+    font-weight: normal!important;
+    padding-left: 14px!important;
+}
+
+#hidescreen, #loadingData{
+    position: fixed;
+    display: none;
+}
+
+#hidescreen {
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    left: 0;
+    top: 0;
+}
+
+#loadingData {
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    height: 64px;
+    margin-left: -64px;
+}
+
+.main-content {
+    background: #fff!important;
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > label,
+.form-label-group > select {
+    height: 3.125rem;
+    padding: .75rem;
+}
+
+.form-label-group > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #495057;
+    pointer-events: none;
+    cursor: text;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::placeholder {
+    color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+    padding-top: 1.25rem;
+    padding-bottom: .25rem;
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    font-size: 12px;
+    color: #777;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+@supports (-ms-ime-align: auto) {
+    .form-label-group > label {
+        display: none;
+    }
+    .form-label-group input::-ms-input-placeholder {
+        color: #777;
+    }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .form-label-group > label {
+        display: none;
+    }
+    .form-label-group input:-ms-input-placeholder {
+        color: #777;
+    }
+}
+
+.block {
+    display: block;
+}
+
+input[id*="_operation_system_"]{
+    margin-right: 0.5rem;
+}
+
+.big-btn {
+    height: 3rem;
+}
+
+[id*="_em_"] {
+    font-size: small;
+}
+
+.font-bold {
+    font-weight: bold!important;
+}
+
+.font-white {
+    color: #fff!important;
+}
+
+.font-link {
+    color: #0056a6!important;
+}
+
+.h4 {
+    font-size: 1.5rem!important;
+    margin-bottom: 0.5rem!important;
+    font-weight: 500!important;
+    line-height: 1.2!important;
+    margin-top: 1rem!important;
+}
+
+#incompletePays .table thead th, #operationList .table thead th {
+    border: none!important;
+}
+
+#operationList .table tbody tr {
+    cursor: pointer;
+}
+
+#incompletePays .table thead tr th,
+#coinsTable .table thead tr th,
+#profitsTable .table thead tr th,
+#outsTable .table thead tr th,
+#paysTable .table thead tr th,
+#messageList .table thead tr th,
+#orderBuy .table thead tr th,
+#orderSell .table thead tr th{
+    border: none!important;
+}
+
+#incompletePays .table thead tr th a,
+#coinsTable .table thead tr th a,
+#profitsTable .table thead tr th a,
+#outsTable .table thead tr th a,
+#paysTable .table thead tr th a,
+#messageList .table thead tr th a,
+#orderBuy .table thead tr th,
+#orderSell .table thead tr th,
+#level_stat > div .table thead tr th a{
+    color: #0063bf !important;
+    font-size: small;
+}
+
+.pagerNew ul{
+    font-size: 11px;
+}
+
+.pagerNew ul > li > a{
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+    box-shadow: none!important;
+}
+
+.historyTime {
+    font-size: 0.8rem;
+}
+
+.history_type {
+    vertical-align: inherit!important;
+    width: 100%
+}
+
+.border-none {
+    border: 0px!important;
+}
+
+.inline {
+    display: inline!important;
+    width: 47%;
+}
+
+.profilePhoto {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    text-align: center
+}
+
+.file {
+   position: relative;
+   background: linear-gradient(to right, lightblue 50%, transparent 50%);
+   background-size: 200% 100%;
+   background-position: right bottom;
+   transition:all 1s ease;
+}
+ .file.done {
+   background: lightgreen;
+}
+ .file a {
+   display: block;
+   position: relative;
+   padding: 5px;
+   color: black;
+}
+
+.login-extlink, .login-extlink > a {
+    text-align: center;
+    color: #6c757d !important;
+}
+
+.mobile-visible, .mobile-visible-block {
+    display: none;
+}
+
+.logo_head{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+a.logo_head img {
+    max-width: 130px;
+    max-height: 50px;
+    margin: 5px auto;
+}
+
+.mini-nav-btn {
+    width: 50px!important;
+}
+
+@media (min-width: 250px) and (max-width: 770px) {
+    .mb-1-mobile {
+        margin-bottom: 0.5rem!important;
+    }
+    
+    .mobile-visible {
+        display: inline-block!important;
+    }
+    
+    .mobile-visible-block {
+        display: inline!important;
+    }
+    
+    .head-image-mobile {
+        width: 27%
+    }
+    
+    .head-logo {
+        width: 75%!important;
+    }
+    
+    a.logo_head img {
+        max-width: 95px!important;
+        max-height: 50px;
+        margin: 8px auto;
+    }
+}
+
+.lang_head {
+    padding: 0;
+    font-size: 1rem;
+    height: 1.3rem;
+}
+
+.referral_photo {
+    padding-top: 0.2rem!important;
+}
+
+.photo_table {
+    height: 3rem;
+    border-radius: 5px;
+}
+
+.lang-select > button {
+    border-radius: 0.25rem!important;
+}
+
+.lang-select > ul.dropdown-menu {
+    top: 0.5rem !important;
+    padding: 1rem;
+    text-align: center;
+}
+
+.dropLang::before {
+    content: ""!important;
+    position: absolute!important;
+    top: -8px!important;
+    left: 15%!important;
+    width: 0!important;
+    height: 0!important;
+    border-left: 8px solid transparent!important;
+    border-right: 8px solid transparent!important;
+    border-bottom: 8px solid #e1e5f1!important;
+}
+
+.dropLang::after {
+    content: ""!important;
+    position: absolute!important;
+    top: -7px!important;
+    left: 15%!important;
+    width: 0!important;
+    height: 0!important;
+    border-left: 7px solid transparent!important;
+    border-right: 7px solid transparent!important;
+    border-bottom: 7px solid #ffffff!important;
+}
+
+.langBtn {
+    box-shadow: none!important;
+}
+
+.head-logo {
+    width: 8%;
+}
+
+.topmenu a {
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.topmenu a:hover, .topmenu a:focus {
+    color: #000!important;
+}
+
+.topmenu .active a {
+    border-bottom: 2px solid #f00!important;
+    color: #000!important;
+}
+
+.sidebar-profile-image{
+    display: block;
+}
+
+.sidebar-profile-image img {
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #8796af;
+    background-color: #fff;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.mb-32 {
+    margin-bottom: 3.2rem;
+}
+
+.font-size-60 {
+    font-size: 60%
+}
+
+a.onoffcanvas-toggler {
+    padding: 15px 15px 18px 5px!important;
+    display: inline-block;
+    border-right: 1px solid #0056a6;
+}
+
+div[id*="news_text_"] {
+    overflow: hidden;
+    position: relative;
+}
+
+div[id*="news_text_"].hide {
+    height: 5rem;
+}
+
+div[id*="news_text_"].hide:after{
+    content: "";
+    display: block;
+    height: 3rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
+}
+
+.border-red {
+    border-color: #ff4c4c!important;
+}
+
+.font-small {
+    font-size: small!important;
+}
+
+.mb-04 {
+    margin-bottom: 0.4rem!important;
+}
+
+.relationTabs a {
+    text-align: left;
+}
+
+span[id*="newsToggle_"] {
+    cursor: pointer;
+}
+
+.yandexImage {
+    position:absolute;
+    left:-9999px;
+}

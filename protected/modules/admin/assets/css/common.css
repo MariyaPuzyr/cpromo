@@ -1,0 +1,42 @@
+.tableWithoutSort > table > tbody > tr > td {
+    padding: 0.2rem 0.75rem 0.2rem 0.75rem!important;
+}
+
+.tableWithoutSort > table > thead > tr > th {
+    border: none;
+}
+
+.tableWithoutSort > table > thead > tr > th {
+    padding: 0;
+}
+
+.tableWithoutSort > table > thead > tr > th{
+    font-size: small;
+    color: #007bff;
+    text-align: center;
+}
+
+#historyLoginList > table > tbody > tr {
+    font-size: small;
+}
+
+#feedbackList > table > tbody > tr {
+    padding-top: 0.5rem!important;
+}
+
+#countActiv.btn-group button {
+    font-size: 0.8rem;
+}
+    
+#countActiv.btn-group button {
+    text-align: center;
+}
+
+#countActiv.btn-group button:not(.active) {
+    border: 1px solid #dee2e6 !important;
+    background-color: #fff;
+}
+
+#countActiv button {
+    box-shadow: none!important;
+}

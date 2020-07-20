@@ -1,0 +1,15 @@
+{
+    "name": "MetaYii/Emailer",
+    "description": "EMailer class",
+    "keywords": ["yii", "extension", "mail"],
+    "type": "yii-extension",
+    "license": "GNU Lesser General Public License",
+    "authors": [
+	{
+            "name": "MetaYii"
+        }
+    ],
+    "require": {
+        "php": ">=5.1.0"
+    }
+}

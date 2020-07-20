@@ -1,0 +1,16 @@
+{
+    "name": "stop4uk/yii-bootstrap4 based on YiiBooster",
+    "description": "Yii bootstrap4 widgets",
+    "keywords": ["yii", "extension", "bootstrap"],
+    "type": "yii-extension",
+    "license": "BSD-3-Clause",
+    "authors": [
+	{
+            "name": "Stop4uk",
+            "email": "stop4uk@yandex.ru"
+	}
+    ],
+    "require": {
+        "php": ">=5.1.0"
+    }
+}

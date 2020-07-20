@@ -1,0 +1,15 @@
+{
+    "name": "iamsalnikov/MobileDetect",
+    "description": "MobileDetect class",
+    "keywords": ["yii", "extension", "mobile"],
+    "type": "yii-extension",
+    "license": "GNU Lesser General Public License",
+    "authors": [
+	{
+            "name": "MobileDetect"
+        }
+    ],
+    "require": {
+        "php": ">=5.1.0"
+    }
+}
