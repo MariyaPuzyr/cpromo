@@ -35,19 +35,29 @@
                 ['icon' => 'icon-messages', 'label' => Yii::t('core', 'menu_left_support'), 'url' => ['/support']],
             ]
         ]); ?>
-        <?php $this->widget('ExtMenu', [
-            'htmlOptions' => [
-                'class' => 'unifyMenu font-white',
-                'id' => 'unifyMenu',
-            ],
-            'items' => [
-                ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_about'), 'url' => ['/info/about']],
-                ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_terms'), 'url' => ['/info/terms']],
-                ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_security'), 'url' => ['/info/security']],
-                ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_privacy'), 'url' => ['/info/privacy']],
-                ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_aml'), 'url' => ['/info/aml']],
-                #['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_offer'), 'url' => ['/info/offer']],
-            ]
-        ]); ?>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+          <span class="menu-title">Articles</span>
+          <i class="menu-arrow"></i>
+          <i class="mdi mdi-book-open-page-variant menu-icon"></i>
+        </a>
+        <div class="collapse" id="general-pages">
+            <?php $this->widget('ExtMenu', [
+                'htmlOptions' => [
+                    'class' => 'unifyMenu nav flex-column sub-menu',
+                    'id' => 'unifyMenu',
+                ],
+                'items' => [
+                    ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_about'), 'url' => ['/info/about']],
+                    ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_terms'), 'url' => ['/info/terms']],
+                    ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_security'), 'url' => ['/info/security']],
+                    ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_privacy'), 'url' => ['/info/privacy']],
+                    ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_aml'), 'url' => ['/info/aml']],
+                    #['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_offer'), 'url' => ['/info/offer']],
+                ]
+            ]); ?>
+        </div>
+      </li>
+
     </div>
 </aside>

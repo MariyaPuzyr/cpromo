@@ -5688,13 +5688,14 @@ a.tooltip1 span {
 .unifyMenu li a {
     display: flex;
     align-items: center;
-    white-space: nowrap;
-    padding: 1.125rem 0 1.125rem 0;
+    justify-content: center;
+    padding: 1.125rem 0;
     color: #3e4b5b;
     transition-duration: 0.45s;
     transition-property: color;
     font-size: 0.875rem;
     line-height: 1;
+    white-space: nowrap;
     vertical-align: middle;
     flex-direction: row-reverse;
     font-family: "ubuntu-medium", sans-serif;
@@ -5715,6 +5716,50 @@ a.tooltip1 span {
 .unifyMenu .active .menu-icon {
     color: #b66dff;
 }
-.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown .dropdown-item:hover, .dropdown-item a {
+.unifyMenu.sub-menu li {
+    padding: 0;
+}
+.unifyMenu.sub-menu li a {
+    flex-direction: row;
+    color: #888;
+    padding: 0.75rem 2rem 0.75rem 2rem;
+    position: relative;
+    font-size: 0.8125rem;
+    line-height: 1;
+    height: auto;
+    border-top: 0;
+    justify-content: flex-start;
+    white-space: normal;
+}
+.unifyMenu.sub-menu li a .menu-icon {
+    display: none;
+}
+.unifyMenu.sub-menu li a::before {
+    content: "\F054";
+    font-family: "Material Design Icons";
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #a2a2a2;
+    font-size: .75rem;
+}
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown .dropdown-item:hover, .dropdown-item a, .unifyMenu.sub-menu li a:hover {
     color: #343a40;
+}
+.sidebar-icon-only a.logo_head img{
+    max-width: 70px;
+}
+.sidebar-icon-only .logo_head {
+    padding: 0;
+}
+@media (min-width: 992px) {
+    .sidebar-icon-only .unifyMenu li a .nav-title{
+        display: none;
+    }
+    .sidebar-icon-only .unifyMenu.sub-menu li a .nav-title {
+        display: block;
+    }
 }
