@@ -2,3 +2,4 @@
 
 .idea/*
 /protected/runtime/debug/*
+assets/*/**
