@@ -4,7 +4,7 @@ Yii::import('zii.widgets.CMenu');
 class ExtMenu extends CMenu
 {
     public $activateParents = true;
-    public $activeCssClass = 'active selected';
+    public $activeCssClass = 'active';
     
     protected function renderMenuItem($item)
     {
@@ -12,7 +12,7 @@ class ExtMenu extends CMenu
             $label = $this->linkLabelWrapper === null ? $item['label'] : CHtml::tag($this->linkLabelWrapper, $this->linkLabelWrapperHtmlOptions, $item['label']);
             return 
                 $item['icon'] ? 
-                    CHtml::link('<span class="has-icon"><i class="'.$item['icon'].'"></i></span><span class="nav-title">'.$label.'</span>', $item['url'], isset($item['linkOptions']) ? $item['linkOptions'] : [])
+                    CHtml::link('<span class="menu-icon"><i class="'.$item['icon'].'"></i></span><span class="nav-title">'.$label.'</span>', $item['url'], isset($item['linkOptions']) ? $item['linkOptions'] : [])
                 : 
                     CHtml::link('<span class="nav-title">'.$label.'</span>', $item['url'], isset($item['linkOptions']) ? $item['linkOptions'] : []);
 	} else

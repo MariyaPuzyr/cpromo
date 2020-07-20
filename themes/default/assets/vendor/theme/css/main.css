@@ -337,7 +337,8 @@ hr {
 
 .app-header {
     padding: 0;
-    background: #0063bf;
+    font-family: "ubuntu-light", sans-serif;
+    background: #fff;
     position: fixed;
     z-index: 1020;
     top: 0;
@@ -5673,4 +5674,47 @@ a.tooltip1 span {
 
 .ui-datepicker {
     font-family: 'Ubuntu', sans-serif;
+}
+.unifyMenu, .nav-profile {
+    margin: 0;
+    padding: 0;
+}
+.unifyMenu li {
+    padding: 0 2.25rem;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    transition-property: background;
+}
+.unifyMenu li a {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 1.125rem 0 1.125rem 0;
+    color: #3e4b5b;
+    transition-duration: 0.45s;
+    transition-property: color;
+    font-size: 0.875rem;
+    line-height: 1;
+    vertical-align: middle;
+    flex-direction: row-reverse;
+    font-family: "ubuntu-medium", sans-serif;
+    text-decoration: none;
+}
+.unifyMenu .active a {
+    color: #b66dff;
+}
+.unifyMenu li:hover {
+    background: #fcfcfc;
+}
+.unifyMenu .menu-icon {
+    font-size: 1.125rem;
+    line-height: 1;
+    margin-left: auto;
+    color: #bba8bff5;
+}
+.unifyMenu .active .menu-icon {
+    color: #b66dff;
+}
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown .dropdown-item:hover, .dropdown-item a {
+    color: #343a40;
 }

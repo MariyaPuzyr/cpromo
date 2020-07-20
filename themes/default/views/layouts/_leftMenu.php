@@ -3,48 +3,51 @@
     $photo = (file_exists(Yii::getPathOfAlias('webroot.uploads').'/user_photo/'.$uData->photo)) ? $uData->photo : '';
 ?>
 
-<aside class="app-side" id="app-side">
-    <div class="side-content">
-        <div class="text-center p-3">
-            <a href="<?= $this->createAbsoluteUrl('/profile');?>" class="sidebar-profile-image">
-                <?= CHtml::image($photo ? 'data:image/png;base64,'.base64_encode(file_get_contents(Yii::getPathOfAlias('webroot.uploads').'/user_photo/'.$photo)) : $this->assetsBase.'/img/no_photo.jpg'); ?>
+<aside class="sidebar sidebar-offcanvas" id="sidebar">
+    <div class="nav">
+        <ul class="list-unstyled">
+          <li class="nav-item nav-profile">
+            <a href="<?= $this->createAbsoluteUrl('/profile');?>" class="nav-link">
+              <div class="nav-profile-image">
+                  <?= CHtml::image($photo ? 'data:image/png;base64,'.base64_encode(file_get_contents(Yii::getPathOfAlias('webroot.uploads').'/user_photo/'.$photo)) : $this->assetsBase.'/img/no_photo.jpg'); ?>
+                <!--              <img src="assets/images/faces/face1.jpg" alt="profile">-->
+              </div>
+              <div class="nav-profile-text d-flex flex-column">
+                <span class="font-weight-bold mb-2"><?= Yii::t('core', 'menu_left_youID', ['#id' => $uData->referral_id]); ?></span>
+              </div>
+              <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
             </a>
-            <span style="color: #fff!important;"><?= Yii::t('core', 'menu_left_youID', ['#id' => $uData->referral_id]); ?></span>
-        </div>
-        <hr style="border-top: 1px solid!important;" />
-        <nav class="side-nav">
-            <?php $this->widget('ExtMenu', [
-                'htmlOptions' => [
-                    'class' => 'unifyMenu font-white',
-                    'id' => 'unifyMenu',
-                ],
-                'items' => [
-                    ['icon' => 'icon-laptop_windows', 'label' => Yii::t('core', 'menu_left_dashboard'), 'url' => ['/dashboard']],
-                    ['icon' => 'icon-flow-tree', 'label' => Yii::t('core', 'menu_left_rnetwork'), 'url' => ['/rnetwork']],
-                    ['icon' => 'icon-wallet', 'label' => Yii::t('core', 'menu_left_finance'), 'url' => ['/finance']],
-                    ['icon' => 'icon-loop2', 'label' => Yii::t('core', 'menu_left_exchange'), 'url' => ['/exchange']],
-                    #['icon' => 'icon-stats-bars', 'label' => Yii::t('core', 'menu_left_activities'), 'url' => ['/activities']],
-                    ['icon' => 'icon-newspaper', 'label' => Yii::t('core', 'menu_left_newsAndMedia'), 'url' => ['/news']],
-                    ['icon' => 'icon-messages', 'label' => Yii::t('core', 'menu_left_support'), 'url' => ['/support']],
-                ]
-            ]); ?>
-        </nav>
-        <nav class="side-nav mt-lg-5">
-            <hr style="border-top: 1px solid!important;" />
-            <?php $this->widget('ExtMenu', [
-                'htmlOptions' => [
-                    'class' => 'unifyMenu font-white',
-                    'id' => 'unifyMenu',
-                ],
-                'items' => [
-                    ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_about'), 'url' => ['/info/about']],
-                    ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_terms'), 'url' => ['/info/terms']],
-                    ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_security'), 'url' => ['/info/security']],
-                    ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_privacy'), 'url' => ['/info/privacy']],
-                    ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_aml'), 'url' => ['/info/aml']],
-                    #['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_offer'), 'url' => ['/info/offer']],
-                ]
-            ]); ?>
-        </nav>
+          </li>
+
+        </ul>
+        <?php $this->widget('ExtMenu', [
+            'htmlOptions' => [
+                'class' => 'unifyMenu font-white',
+                'id' => 'unifyMenu',
+            ],
+            'items' => [
+                ['icon' => 'icon-laptop_windows', 'label' => Yii::t('core', 'menu_left_dashboard'), 'url' => ['/dashboard']],
+                ['icon' => 'icon-flow-tree', 'label' => Yii::t('core', 'menu_left_rnetwork'), 'url' => ['/rnetwork']],
+                ['icon' => 'icon-wallet', 'label' => Yii::t('core', 'menu_left_finance'), 'url' => ['/finance']],
+                ['icon' => 'icon-loop2', 'label' => Yii::t('core', 'menu_left_exchange'), 'url' => ['/exchange']],
+                #['icon' => 'icon-stats-bars', 'label' => Yii::t('core', 'menu_left_activities'), 'url' => ['/activities']],
+                ['icon' => 'icon-newspaper', 'label' => Yii::t('core', 'menu_left_newsAndMedia'), 'url' => ['/news']],
+                ['icon' => 'icon-messages', 'label' => Yii::t('core', 'menu_left_support'), 'url' => ['/support']],
+            ]
+        ]); ?>
+        <?php $this->widget('ExtMenu', [
+            'htmlOptions' => [
+                'class' => 'unifyMenu font-white',
+                'id' => 'unifyMenu',
+            ],
+            'items' => [
+                ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_about'), 'url' => ['/info/about']],
+                ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_terms'), 'url' => ['/info/terms']],
+                ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_security'), 'url' => ['/info/security']],
+                ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_privacy'), 'url' => ['/info/privacy']],
+                ['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_aml'), 'url' => ['/info/aml']],
+                #['icon' => 'fas fa-angle-double-right', 'label' => Yii::t('core', 'page_offer'), 'url' => ['/info/offer']],
+            ]
+        ]); ?>
     </div>
 </aside>

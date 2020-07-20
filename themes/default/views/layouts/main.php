@@ -1,9 +1,11 @@
 <?php
     Yii::app()->clientScript->registerCssFile($this->assetsBase.'/vendor/theme/css/main.css');
+    Yii::app()->clientScript->registerCssFile($this->assetsBase.'/vendor/theme/css/style.css');
     Yii::app()->clientScript->registerCssFile($this->assetsBase.'/vendor/theme/css/custom.css');
     Yii::app()->clientScript->registerCssFile($this->assetsBase.'/vendor/theme/icomoon/icomoon.css');
     Yii::app()->clientScript->registerCssFile($this->assetsBase.'/css/common.css');
     Yii::app()->clientScript->registerCssFile(YII_DEBUG ? $this->assetsBase.'/vendor/fancybox/jquery.fancybox.css' : $this->assetsBase.'/vendor/fancybox/jquery.fancybox.min.css');
+    Yii::app()->clientScript->registerCssFile($this->assetsBase.'/vendor/theme/css/materialdesignicons.min.css');
     Yii::app()->clientScript->registerScriptFile($this->assetsBase.'/js/common.js', CClientScript::POS_HEAD);
     Yii::app()->clientScript->registerScriptFile($this->assetsBase.'/vendor/theme/js/unifyMenu.js');
     Yii::app()->clientScript->registerScriptFile($this->assetsBase.'/vendor/theme/js/onoffcanvas.js');
@@ -54,10 +56,10 @@
         
         <div class="app-wrap">
             <?php $this->renderPartial('//layouts/_header'); ?>
-            <div class="app-container">
+            <div class="container-fluid page-body-wrapper">
                 <?php $this->renderPartial('//layouts/_leftMenu');?>
-                <div class="app-main">
-                    <div class="main-content">
+                <div class="main-panel">
+                    <div class="content-wrapper">
                         <?= $content ?>
                     </div>
                 </div>
