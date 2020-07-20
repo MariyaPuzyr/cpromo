@@ -5763,3 +5763,38 @@ a.tooltip1 span {
         display: block;
     }
 }
+.card.bg-white.border-none .card-header {
+    padding: 2.5rem 2.5rem 0;
+    margin: 0;
+    border-radius: 0.3125rem;
+    background: #fff;
+    color: #343a40;
+    margin-bottom: 0.75rem;
+    text-transform: capitalize;
+    font-family: "ubuntu-medium", sans-serif;
+    font-size: 1.125rem;
+    border-bottom: none;
+}
+.card.bg-white.border-none .card-header strong {
+    font-weight: normal;
+}
+.card.bg-white.border-none .card-body {
+    padding: 0 2.5rem 2.5rem;
+}
+li.page-item.active .page-link {
+    background: #b66dff;
+    border-color: #b66dff;
+    color: #ffffff;
+}
+
+.pagerNew ul > li > a.page-link {
+    color: #343a40;
+    font-size: .875rem;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    background-color: #fff;
+    border: 1px solid #ebedf2;
+}
