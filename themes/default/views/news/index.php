@@ -12,7 +12,7 @@
 ?>
 
 <div class="row gutters justify-content-md-center">
-    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 card-columns">
         <?php 
             if($dataProvider->getData()) {
                 $this->widget('bootstrap.widgets.TbThumbnails', [

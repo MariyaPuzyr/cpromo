@@ -12,7 +12,7 @@ class TbThumbnails extends TbListView
 	$data = $this->dataProvider->getData();
 
 	if(!empty($data)) {
-            $classes[] = $this->fluid ? 'row-fluid' : 'row';
+            $classes[] = $this->fluid ? 'card-columns' : 'card-columns';
             $classes[] = $this->flex ? 'd-flex justify-content-between' : '';
             
             echo CHtml::openTag('div', ['class' => implode(' ', $classes)]);
