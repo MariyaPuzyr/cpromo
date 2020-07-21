@@ -2,19 +2,11 @@
     <div class="container-fluid p-0">
         <div class="default-layout-navbar col-lg-12 col-12 p-0 d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                <?php if(Yii::app()->mobileDetect->isMobile()): ?>
-                    <a class="mini-nav-btn" href="#" id="app-side-mini-toggler">
-                        <i class="icon-chevron-thin-left"></i>
-                    </a>
-                    <a href="#app-side" data-toggle="onoffcanvas" class="onoffcanvas-toggler" aria-expanded="true">
-                        <i class="icon-chevron-thin-left"></i>
-                    </a>
-                <?php endif; ?>
                 <a href="<?= $this->createAbsoluteUrl('/dashboard');?>" class="logo_head">
                     <?=CHtml::image($this->assetsBase.DIRECTORY_SEPARATOR.'img/logo_new.png'); ?>
                 </a>
             </div>
-            <div class="navbar-menu-wrapper d-flex align-items-stretch">
+            <div class="navbar-menu-wrapper d-flex align-items-stretch ml-auto">
               <button class="navbar-toggler navbar-toggler align-self-center mr-auto" type="button" data-toggle="minimize">
                 <span class="mdi mdi-menu"></span>
               </button>
@@ -22,6 +14,7 @@
                 <ul class="navbar-nav">
                   <li class="nav-item nav-profile dropdown">
                     <a class="nav-link dropdown-toggle" id="userSettings" href="#" data-toggle="dropdown" aria-expanded="false">
+                      <i class="mdi mdi-account d-lg-none d-md-none"></i>
                       <div class="nav-profile-text">
                         <p class="mb-1 text-blackuser-name"><?= CHtml::encode(Yii::app()->user->model()->username); ?></p>
                       </div>
@@ -43,6 +36,9 @@
                     </div>
                   </li>
                 </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                  <span class="mdi mdi-menu"></span>
+                </button>
             </div>
         </div>
     </div>
