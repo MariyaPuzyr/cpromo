@@ -5800,7 +5800,19 @@ li.page-item.active .page-link {
 }
 .list-view {width: 100%;}
 .card-text p {margin-bottom: 0;}
-.card-body #messageList .table thead tr th a {color: #212529 !important;}
+
+.card-body #messageList .table thead tr th a,
+.card-body #incompletePays .table thead tr th a,
+.card-body #coinsTable .table thead tr th a,
+.card-body #profitsTable .table thead tr th a,
+.card-body #outsTable .table thead tr th a,
+.card-body #paysTable .table thead tr th a,
+.card-body #messageList .table thead tr th a,
+.card-body #orderBuy .table thead tr th,
+.card-body #orderSell .table thead tr th,
+.card-body #level_stat > div .table thead tr th a {
+    color: #212529 !important;
+}
 .card.bg-white.border-none .sort-link {font-family: "ubuntu-regular", sans-serif;font-weight: bold;}
 .button-column {display: flex;justify-content: space-around;}
 .button-column a {color: #212529;}
@@ -5812,4 +5824,24 @@ li.page-item.active .page-link {
     margin-left: -1.5rem;
     width: 1.5rem;
     margin-right: .5rem;
+}
+
+li.page-item.previous .page-link::before,
+li.page-item.next .page-link::before {
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    line-height: inherit;
+    font-size: .875rem;
+}
+li.page-item.previous .page-link::before {
+    content: "\F141";
+}
+li.page-item.next .page-link::before {
+    content: "\F142";
+}
+.page-item:first-child .page-link, .page-item:last-child .page-link {
+    font-size: 0;
+    height: 100%;
 }

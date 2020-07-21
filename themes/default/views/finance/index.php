@@ -16,9 +16,9 @@
     if($incData->getData()): ?>
 <div class="row gutters mt-3">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <div class="card">
-            <div class="card-header"><strong><?= Yii::t('controllers', 'finance_index_lbl_incompletePays'); ?></strong></div>
-            <div class="card-body bg-white">
+        <div class="card bg-white border-none">
+            <div class="card-body">
+                <h4 class="card-header px-0"><?= Yii::t('controllers', 'finance_index_lbl_incompletePays'); ?></h4>
                 <?php 
                     $this->widget('bootstrap.widgets.TbGridView', [
                         'id' => 'incompletePays',
@@ -98,12 +98,9 @@
 
 <div class="row gutters mt-3">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <div class="card">
-            <div class="card-header">
-                <strong><?= Yii::t('controllers', 'finance_index_lbl_pays'); ?></strong>
-                <span class="badge badge-danger text-danger ml-3 rounded"><?= ''; /*CHtml::link(Yii::t('core', 'btn_invest'), '#', ['id' => 'payLink_finance', 'class' => 'font-white']);*/ ?></span>
-            </div>
-            <div class="card-body bg-white">
+        <div class="card bg-white border-none">
+            <div class="card-body">
+              <h4 class="card-header px-0"><?= Yii::t('controllers', 'finance_index_lbl_pays'); ?><span class="badge badge-danger text-danger ml-3 rounded"><?= ''; /*CHtml::link(Yii::t('core', 'btn_invest'), '#', ['id' => 'payLink_finance', 'class' => 'font-white']);*/ ?></span></h4>
                 <?php 
                     $this->widget('bootstrap.widgets.TbGridView', [
                         'id' => 'paysTable',
@@ -149,14 +146,13 @@
 
 <div class="row gutters mt-3">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <div class="card">
-            <div class="card-header">
-                <strong><?= Yii::t('controllers', 'finance_index_lbl_coins'); ?></strong>
-                <?php if(Yii::app()->user->finance->balance != 0): ?>
+        <div class="card bg-white border-none">
+            <div class="card-body">
+              <h4 class="card-header px-0"><?= Yii::t('controllers', 'finance_index_lbl_coins'); ?>
+                  <?php if(Yii::app()->user->finance->balance != 0): ?>
                     <span class="badge badge-danger text-danger ml-3 rounded"><?= CHtml::link(Yii::t('controllers', 'finance_index_btn_buyCoin'), '/exchange', ['class' => 'font-white']); ?></span>
-                <?php endif; ?>
-            </div>
-            <div class="card-body bg-white">
+                  <?php endif; ?>
+              </h4>
                 <?php 
                     $this->widget('bootstrap.widgets.TbGridView', [
                         'id' => 'coinsTable',
@@ -186,9 +182,9 @@
 
 <div class="row gutters mt-3">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <div class="card">
-            <div class="card-header"><strong><?= Yii::t('controllers', 'finance_index_lbl_profits'); ?></strong></div>
-            <div class="card-body bg-white">
+        <div class="card bg-white border-none">
+            <div class="card-body">
+              <h4 class="card-header px-0"><?= Yii::t('controllers', 'finance_index_lbl_profits'); ?></h4>
                 <?php 
                     $this->widget('bootstrap.widgets.TbGridView', [
                         'id' => 'profitsTable',
@@ -215,14 +211,13 @@
 
 <div class="row gutters mt-3">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <div class="card">
-            <div class="card-header">
-                <strong><?= Yii::t('controllers', 'finance_index_lbl_outs'); ?></strong>
-                <?php if($balance->balance_out != 0): ?>
+        <div class="card bg-white border-none">
+            <div class="card-body">
+              <h4 class="card-header px-0"><?= Yii::t('controllers', 'finance_index_lbl_outs'); ?>
+                  <?php if($balance->balance_out != 0): ?>
                     <span class="badge badge-danger text-danger ml-3 rounded"><?= CHtml::link(Yii::t('controllers', 'finance_index_btn_out'), '#', ['id' => 'outLink_finance', 'class' => 'font-white']); ?></span>
-                <?php endif; ?>
-            </div>
-            <div class="card-body bg-white">
+                  <?php endif; ?>
+              </h4>
                 <?php 
                     $this->widget('bootstrap.widgets.TbGridView', [
                         'id' => 'outsTable',
