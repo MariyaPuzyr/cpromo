@@ -286,9 +286,11 @@ a.logo_head img {
     .head-logo {
         width: 75%!important;
     }
-    
+    .logo_head {
+        padding-top: 0;
+    }
     a.logo_head img {
-        max-width: 95px!important;
+        max-width: 55px!important;
         max-height: 50px;
         margin: 8px auto;
     }

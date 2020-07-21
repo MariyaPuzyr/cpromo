@@ -5801,3 +5801,4 @@ li.page-item.active .page-link {
 .list-view {
     width: 100%;
 }
+.card-text p {margin-bottom: 0;}
