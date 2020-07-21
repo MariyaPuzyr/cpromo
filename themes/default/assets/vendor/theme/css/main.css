@@ -5845,3 +5845,5 @@ li.page-item.next .page-link::before {
     font-size: 0;
     height: 100%;
 }
+.stats-widget {z-index: 2;position: relative;}
+.text-white h6 span {color: #ffffff !important;}

@@ -20,35 +20,57 @@
 
 <div class="row gutters">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <div class="card bg-white">
-            <div class="card-header bg-white"><strong><?= Yii::t('controllers', 'dashboard_index_lbl_opportunities'); ?></strong></div>
-            <div class="card-body mb-0 pb-0">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                        <h3 class="bg-primary font-white text-center rounded p-2"><?= Yii::t('controllers', 'dashboard_index_lbl_yourStatus', ['#status' => $userData->statusAccount->{'name_'.Yii::app()->language}]); ?></h3>
-                    </div>
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
-                        <p class="mb-1 mt-2"><?= Yii::t('models', 'sprStatuses_attr_max_levels_full', ['#count' => $userData->statusAccount->max_levels]); ?> <?= $userData->status_account != Users::STATUSMAX ? CHtml::link(Yii::t('controllers', 'dashboard_index_btn_buyStatus'), '#', ['id' => 'buyStatusLink_board']) : ''; ?></p>
-                        <p class="mb-1"><?= Yii::t('models', 'sprStatuses_attr_max_coin_buy_summ_full', ['#summ' => $userData->statusAccount->max_coin_buy_summ]); ?></p>
-                        <p><?= Yii::t('models', 'sprStatuses_attr_out_full', ['#count' => $userData->statusAccount->out_count, '#period' => SprStatuses::getOutPeriodType($userData->statusAccount->out_count_period, true), '#summ' => $userData->statusAccount->out_max_summ]); ?></p>
-                    </div>
-                </div>
+        <div class="card card-statistics">
+          <div class="row">
+            <div class="card-col col-xl-4 col-lg-3 col-md-3 col-12 border-right">
+              <div class="card-body">
+                <h4 class="card-title px-0"><?= Yii::t('controllers', 'dashboard_index_lbl_opportunities'); ?></h4>
+                <h3 class="bg-primary font-white text-center rounded p-2"><?= Yii::t('controllers', 'dashboard_index_lbl_yourStatus', ['#status' => $userData->statusAccount->{'name_' . Yii::app()->language}]); ?></h3>
+              </div>
             </div>
+            <div class="card-col col-xl-8 col-lg-8 col-md-8 col-12">
+              <div class="d-flex align-items-center justify-content-center flex-column flex-row h-100">
+                <p class="mb-1 mt-2"><?= Yii::t('models', 'sprStatuses_attr_max_levels_full', ['#count' => $userData->statusAccount->max_levels]); ?> <?= $userData->status_account != Users::STATUSMAX ? CHtml::link(Yii::t('controllers', 'dashboard_index_btn_buyStatus'), '#', ['id' => 'buyStatusLink_board']) : ''; ?></p>
+                <p class="mb-1"><?= Yii::t('models', 'sprStatuses_attr_max_coin_buy_summ_full', ['#summ' => $userData->statusAccount->max_coin_buy_summ]); ?></p>
+                <p><?= Yii::t('models', 'sprStatuses_attr_out_full', ['#count' => $userData->statusAccount->out_count, '#period' => SprStatuses::getOutPeriodType($userData->statusAccount->out_count_period, true), '#summ' => $userData->statusAccount->out_max_summ]); ?></p>
+              </div>
+            </div>
+          </div>
+
+
+          <!--<div class="card-body mb-0 pb-0">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="card-title px-0"><?/*= Yii::t('controllers', 'dashboard_index_lbl_opportunities'); */?></h4>
+              </div>
+            </div>
+              <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                      <h3 class="bg-primary font-white text-center rounded p-2"><?/*= Yii::t('controllers', 'dashboard_index_lbl_yourStatus', ['#status' => $userData->statusAccount->{'name_'.Yii::app()->language}]); */?></h3>
+                  </div>
+                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                      <p class="mb-1 mt-2"><?/*= Yii::t('models', 'sprStatuses_attr_max_levels_full', ['#count' => $userData->statusAccount->max_levels]); */?> <?/*= $userData->status_account != Users::STATUSMAX ? CHtml::link(Yii::t('controllers', 'dashboard_index_btn_buyStatus'), '#', ['id' => 'buyStatusLink_board']) : ''; */?></p>
+                      <p class="mb-1"><?/*= Yii::t('models', 'sprStatuses_attr_max_coin_buy_summ_full', ['#summ' => $userData->statusAccount->max_coin_buy_summ]); */?></p>
+                      <p><?/*= Yii::t('models', 'sprStatuses_attr_out_full', ['#count' => $userData->statusAccount->out_count, '#period' => SprStatuses::getOutPeriodType($userData->statusAccount->out_count_period, true), '#summ' => $userData->statusAccount->out_max_summ]); */?></p>
+                  </div>
+              </div>
+          </div>-->
         </div>
     </div>
 </div>
 
 <div class="row gutters mt-5">
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card grid-margin">
+        <div class="card bg-gradient-danger card-img-holder text-white">
             <div class="card-body">
+              <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
                 <div class="stats-widget">
                     <div class="stats-widget-header">
-                        <ul class="row no-gutters">
+                        <ul class="row no-gutters pl-0">
                             <li class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col">
-                                <i class="icon-coin-dollar"></i>
+                                <i class="icon-coin-dollar text-white"></i>
                             </li>
-                            <li class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col text-right text-muted">
+                            <li class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col text-right text-white">
                                 <h6 class="mb-0">&nbsp;</h6>
                                 <h6 class="mb-0"><?= Yii::t('controllers', 'dashboard_index_lbl_balance_coinsBuy_freeze', ['#summ' => number_format($userBalance->buy_freeze,2,".","")]);?></h6>
                                 <h6 class="mb-0"><?= Yii::t('controllers', 'dashboard_index_lbl_balance_outs_freeze', ['#summ' => number_format($userBalance->outs_freeze,2,".","")]);?></h6>
@@ -57,12 +79,12 @@
                         </ul>
                     </div>
                     <div class="stats-widget-body">
-                        <ul class="row no-gutters">
+                        <ul class="row no-gutters pl-0">
                             <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'dashboard_index_lbl_balance'); ?></h6>
+                                <h6 class="title text-white"><?= Yii::t('controllers', 'dashboard_index_lbl_balance'); ?></h6>
                             </li>
                             <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h4 class="total"><?= number_format($userBalance->balance - $userBalance->outs_freeze - $userBalance->buy_freeze,2,".","") ?>$</h4>
+                                <h4 class="total text-white"><?= number_format($userBalance->balance - $userBalance->outs_freeze - $userBalance->buy_freeze,2,".","") ?>$</h4>
                             </li>
                         </ul>
                         <div class="row">
@@ -74,7 +96,7 @@
                                         'label' => Yii::t('controllers', 'dashboard_index_btn_pay'),
                                         'htmlOptions' => [
                                             'id' => 'payLink_dash',
-                                            'class' => 'mt-3'
+                                            'class' => 'btn-inverse-dark btn-light px-0'
                                         ]
                                     ]);
                                 ?>
@@ -88,7 +110,7 @@
                                         'disabled' => $userBalance->balance <= 0,
                                         'htmlOptions' => [
                                             'id' => 'outLink_dash',
-                                            'class' => 'mt-3'
+                                            'class' => 'btn-inverse-dark btn-light'
                                         ]
                                     ]);
                                 ?>
@@ -99,16 +121,17 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card grid-margin">
+        <div class="card bg-gradient-info card-img-holder text-white">
             <div class="card-body">
+              <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
                 <div class="stats-widget">
                     <div class="stats-widget-header">
-                        <ul class="row no-gutters">
+                        <ul class="row no-gutters pl-0">
                             <li class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col">
-                                <i class="icon-radio_button_unchecked"></i>
+                                <i class="icon-radio_button_unchecked text-white"></i>
                             </li>
-                            <li class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col text-right text-muted">
+                            <li class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col text-right text-white">
                                 <h6 class="mb-0"><?= Yii::t('controllers', 'dashboard_index_lbl_activ_profit', ['#count' => $userBalance->coinsProfit]);?></h6>
                                 <h6 class="mb-0"><?= Yii::t('controllers', 'dashboard_index_lbl_activ_buy', ['#count' => $userBalance->coins_buy]);?></h6>
                                 <h6 class="mb-0"><?= Yii::t('controllers', 'dashboard_index_lbl_activ_sell', ['#count' => $userBalance->coins_sell]);?></h6>
@@ -119,12 +142,12 @@
                     </div>
                     <div class="stats-widget-body">
                         <!-- Row start -->
-                        <ul class="row no-gutters">
+                        <ul class="row no-gutters pl-0">
                             <li class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'dashboard_index_lbl_activ'); ?></h6>
+                                <h6 class="title text-white"><?= Yii::t('controllers', 'dashboard_index_lbl_activ'); ?></h6>
                             </li>
                             <li class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col text-right">
-                                <h4 class="total"><?= $userBalance->coins - $userBalance->coins_freeze; ?>CP</h4>
+                                <h4 class="total text-white"><?= $userBalance->coins - $userBalance->coins_freeze; ?>CP</h4>
                             </li>
                         </ul>
                         <div class="row">
@@ -137,7 +160,7 @@
                                     'buttonType' => 'link',
                                     'url' => $this->createUrl('/exchange'),
                                     'htmlOptions' => [
-                                        'class' => 'mt-3'
+                                        'class' => 'btn-inverse-dark btn-light'
                                     ]
                                 ]);?>
                             </div>
@@ -151,7 +174,7 @@
                                         'label' => Yii::t('controllers', 'dashboard_index_btn_sell'),
                                         'disabled' => $userBalance->now_coins = 0,
                                         'htmlOptions' => [
-                                            'class' => 'mt-3'
+                                            'class' => 'btn-inverse-dark btn-light'
                                         ]
                                     ]);
                                 ?>
@@ -162,16 +185,17 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card grid-margin">
+        <div class="card bg-gradient-success card-img-holder text-white">
             <div class="card-body">
+              <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
                 <div class="stats-widget">
                     <div class="stats-widget-header">
-                        <ul class="row no-gutters">
+                        <ul class="row no-gutters pl-0">
                             <li class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col">
-                                <i class="icon-stats-bars"></i>
+                                <i class="icon-stats-bars text-white"></i>
                             </li>
-                            <li class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col text-right text-muted">
+                            <li class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col text-right text-white">
                                 <h6 class="mb-0">&nbsp;</h6>
                                 <h6 class="mb-0">&nbsp;</h6>
                                 <h6 class="mb-0">&nbsp;</h6>
@@ -181,12 +205,12 @@
                     </div>
                     <div class="stats-widget-body">
                         <!-- Row start -->
-                        <ul class="row no-gutters">
+                        <ul class="row no-gutters pl-0">
                             <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'dashboard_index_lbl_coinCourse'); ?></h6>
+                                <h6 class="title text-white"><?= Yii::t('controllers', 'dashboard_index_lbl_coinCourse'); ?></h6>
                             </li>
                             <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h4 class="total"><?= $coins->price; ?>$</h4>
+                                <h4 class="total text-white"><?= $coins->price; ?>$</h4>
                             </li>
                         </ul>
                         <?php $this->widget('bootstrap.widgets.TbButton', [
@@ -194,23 +218,24 @@
                             'context' => 'primary',
                             'label' => Yii::t('controllers', 'dashboard_index_lbl_forDay', ['#price' => $chartPrice]),
                             'disabled' => true,
-                            'htmlOptions' => ['class' => 'mt-3']
+                            'htmlOptions' => ['class' => 'btn-inverse-dark btn-light']
                         ]);?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-lg-3 col-md-3 co0l-sm-12">
-        <div class="card">
+    <div class="col-xl-3 col-lg-3 col-md-3 co0l-sm-12 stretch-card grid-margin">
+        <div class="card bg-gradient-primary card-img-holder text-white">
             <div class="card-body">
+              <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
                 <div class="stats-widget">
                     <div class="stats-widget-header">
-                        <ul class="row no-gutters">
+                        <ul class="row no-gutters pl-0">
                             <li class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col">
-                                <i class="icon-flow-tree"></i>
+                                <i class="icon-flow-tree text-white"></i>
                             </li>
-                            <li class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col text-right text-muted">
+                            <li class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col text-right text-white">
                                 <h6 class="mb-0">&nbsp;</h6>
                                 <h6 class="mb-0">&nbsp;</h6>
                                 <h6 class="mb-0">&nbsp;</h6>
@@ -220,12 +245,12 @@
                     </div>
                     <div class="stats-widget-body">
                         <!-- Row start -->
-                        <ul class="row no-gutters">
+                        <ul class="row no-gutters pl-0">
                             <li class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'dashboard_index_lbl_rActiv'); ?></h6>
+                                <h6 class="title text-white"><?= Yii::t('controllers', 'dashboard_index_lbl_rActiv'); ?></h6>
                             </li>
                             <li class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col">
-                                <h4 class="total"><?= $refs['count'] ? $refs['count'] : 0; ?> <?= ($refs['countOfDay']) ? Yii::t('controllers', 'dashboard_index_lbl_partnerOnDay', ['#count' => $refs['countOfDay']]) : Yii::t('controllers', 'dashboard_index_lbl_partnerOnDay', ['#count' => $refs['countOfDay']])?></h4>
+                                <h4 class="total text-white"><?= $refs['count'] ? $refs['count'] : 0; ?> <?= ($refs['countOfDay']) ? Yii::t('controllers', 'dashboard_index_lbl_partnerOnDay', ['#count' => $refs['countOfDay']]) : Yii::t('controllers', 'dashboard_index_lbl_partnerOnDay', ['#count' => $refs['countOfDay']])?></h4>
                             </li>
                         </ul>
                         <?php $this->widget('bootstrap.widgets.TbButton', [
@@ -235,7 +260,7 @@
                             'disabled' => !$refs['count'],
                             'buttonType' => 'link',
                             'url' => $this->createUrl('/rnetwork'),
-                            'htmlOptions' => ['class' => 'mt-3']
+                            'htmlOptions' => ['class' => 'btn-inverse-dark btn-light']
                         ]);?>
                     </div>
                 </div>
@@ -245,23 +270,24 @@
 </div>
 
 <div class="row gutters">
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
+  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card">
+      <div class="card bg-gradient-secondary card-img-holder text-white">
             <div class="card-body">
+              <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
                 <div class="stats-widget">
                     <div class="stats-widget-header">
-                        <i class="fas fa-arrow-up"></i>
+                        <i class="fas fa-arrow-up text-white"></i>
                     </div>
                     <div class="stats-widget-body">
-                        <ul class="row no-gutters">
+                        <ul class="row no-gutters pl-0">
                             <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'dashboard_index_lbl_invest'); ?></h6>
+                                <h6 class="title text-white"><?= Yii::t('controllers', 'dashboard_index_lbl_invest'); ?></h6>
                             </li>
                             <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h4 class="total"><?= number_format(($userBalance->invest_status + $userBalance->invest_coin),2,".","").'$'; ?></h4>
+                                <h4 class="total text-white"><?= number_format(($userBalance->invest_status + $userBalance->invest_coin),2,".","").'$'; ?></h4>
                             </li>
                         </ul>
-                        <div class="text-right text-muted">
+                        <div class="text-right text-white">
                             <h6 class="mb-0 mt-2"><?= Yii::t('controllers', 'dashboard_index_lbl_invest_status', ['#summ' => number_format($userBalance->invest_status,2,".","")]);?></h6>
                             <h6 class="mb-0"><?= Yii::t('controllers', 'dashboard_index_lbl_invest_coins', ['#summ' => number_format($userBalance->invest_coin,2,".","")]);?></h6>
                         </div>
@@ -270,23 +296,24 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card">
+        <div class="card bg-gradient-warning card-img-holder text-white">
             <div class="card-body">
+              <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
                 <div class="stats-widget">
                     <div class="stats-widget-header">
-                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-plus text-white"></i>
                     </div>
                     <div class="stats-widget-body">
-                        <ul class="row no-gutters">
+                        <ul class="row no-gutters pl-0">
                             <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'dashboard_index_lbl_profit'); ?></h6>
+                                <h6 class="title text-white"><?= Yii::t('controllers', 'dashboard_index_lbl_profit'); ?></h6>
                             </li>
                             <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h4 class="total"><?= number_format($userBalance->profits,2,".","").'$'; ?></h4>
+                                <h4 class="total text-white"><?= number_format($userBalance->profits,2,".","").'$'; ?></h4>
                             </li>
                         </ul>
-                        <div class="text-right text-muted">
+                        <div class="text-right text-white">
                             <h6 class="mb-0 mt-2"><?= Yii::t('controllers', 'dashboard_index_lbl_profit_refs', ['#summ' => number_format($userBalance->profit_refs,2,".","")]);?></h6>
                             <h6 class="mb-0"><?= Yii::t('controllers', 'dashboard_index_lbl_profit_coins', ['#summ' => number_format($userBalance->profit_coin,2,".","")]);?></h6>
                         </div>
@@ -295,46 +322,48 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
+  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card">
+      <div class="card bg-gradient-success card-img-holder text-white">
             <div class="card-body">
+              <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
                 <div class="stats-widget">
                     <div class="stats-widget-header">
-                        <i class="fas fa-arrow-down"></i>
+                        <i class="fas fa-arrow-down text-white"></i>
                     </div>
                     <div class="stats-widget-body">
-                        <ul class="row no-gutters">
+                        <ul class="row no-gutters pl-0">
                             <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'dashboard_index_lbl_outs'); ?></h6>
+                                <h6 class="title text-white"><?= Yii::t('controllers', 'dashboard_index_lbl_outs'); ?></h6>
                             </li>
                             <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h4 class="total"><?= $userBalance->outs ? number_format($userBalance->outs,2,".","").'$' : "0$"; ?></h4>
+                                <h4 class="total text-white"><?= $userBalance->outs ? number_format($userBalance->outs,2,".","").'$' : "0$"; ?></h4>
                             </li>
                         </ul>
                         <div class="text-right text-muted">
                             <h6 class="mb-0 mt-2">&nbsp;</h6>
-                            <h6 class="mb-0"><?= Yii::t('controllers', 'dashboard_index_lbl_outs_desc'); ?></h6>
+                            <h6 class="mb-0 text-white text-center"><?= Yii::t('controllers', 'dashboard_index_lbl_outs_desc'); ?></h6>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card">
+        <div class="card bg-gradient-info card-img-holder text-white">
             <div class="card-body">
+              <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
                 <div class="stats-widget">
                     <div class="stats-widget-header">
-                        <i class="icon-dots-three-horizontal"></i>
+                        <i class="icon-dots-three-horizontal text-white"></i>
                     </div>
                     <div class="stats-widget-body text-center">
-                        <ul class="row no-gutters">
+                        <ul class="row no-gutters pl-0">
                             <li class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col">
-                                <h4 class="total text-center"><?= Yii::t('controllers', 'dashboard_index_lbl_soon'); ?></h4>
+                                <h4 class="total text-center text-white"><?= Yii::t('controllers', 'dashboard_index_lbl_soon'); ?></h4>
                             </li>
                         </ul>
                         <h6 class="mb-0 mt-2">&nbsp;</h6>
-                        <h6 class="mb-0 text-muted"><?= Yii::t('controllers', 'dashboard_index_lbl_soon2'); ?></h6>
+                        <h6 class="mb-0 text-white"><?= Yii::t('controllers', 'dashboard_index_lbl_soon2'); ?></h6>
                     </div>
                 </div>
             </div>
