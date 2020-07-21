@@ -23,6 +23,7 @@
             ?>
         </div>
     </div>
+    <hr />
     <div class="row">
         <div class="col-md-12 small" style="text-align: justify">
             <?= $model->msg_text; ?>
@@ -65,7 +66,7 @@
                     'label' => Yii::t('core', 'btn_send'),
                     'buttonType' => 'submit',
                     'htmlOptions' => [
-                        'class' => 'big-btn'
+                        'class' => 'big-btn btn-gradient-primary'
                     ]
                 ]);
             

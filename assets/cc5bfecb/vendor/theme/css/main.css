@@ -5798,7 +5798,10 @@ li.page-item.active .page-link {
     background-color: #fff;
     border: 1px solid #ebedf2;
 }
-.list-view {
-    width: 100%;
-}
+.list-view {width: 100%;}
 .card-text p {margin-bottom: 0;}
+.card-body #messageList .table thead tr th a {color: #212529 !important;}
+.card.bg-white.border-none .sort-link {font-family: "ubuntu-regular", sans-serif;font-weight: bold;}
+.button-column {display: flex;justify-content: space-around;}
+.button-column a {color: #212529;}
+.button-column a:hover {color: #b66dff;}
