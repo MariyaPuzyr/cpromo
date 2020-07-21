@@ -5805,3 +5805,11 @@ li.page-item.active .page-link {
 .button-column {display: flex;justify-content: space-around;}
 .button-column a {color: #212529;}
 .button-column a:hover {color: #b66dff;}
+.with-list-arrow ul li::before {
+    content: '\F142';
+    color: #1bcfb4;
+    font-family: "Material Design Icons";
+    margin-left: -1.5rem;
+    width: 1.5rem;
+    margin-right: .5rem;
+}
