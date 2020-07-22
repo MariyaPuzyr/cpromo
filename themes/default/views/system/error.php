@@ -1,7 +1,7 @@
 <div class="error-body">
   <div class="content-wrapper d-flex align-items-center text-center error-page bg-primary h-100">
     <div class="row flex-grow">
-      <div class="col-lg-7 mx-auto text-white">
+      <div class="col-lg-11 mx-auto text-white">
         <div class="row align-items-center d-flex flex-row">
           <div class="col-lg-6 text-lg-right pr-lg-4">
             <h1 class="display-1 mb-0"><?php echo $code; ?></h1>
