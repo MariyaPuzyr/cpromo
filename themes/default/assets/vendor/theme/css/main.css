@@ -5846,4 +5846,13 @@ li.page-item.next .page-link::before {
     height: 100%;
 }
 .stats-widget {z-index: 2;position: relative;}
-.text-white h6 span {color: #ffffff !important;}
+.total.text-white .text-muted, .text-white h6 span {color: #ffffff !important;}
+
+@media (min-width: 1380px) {
+    .col-xl-6.col-lg-6.col-md-6.col-sm-12.stretch-card {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}

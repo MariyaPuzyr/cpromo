@@ -20,15 +20,15 @@
 
 <div class="row gutters">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <div class="card card-statistics">
+        <div class="card">
           <div class="row">
-            <div class="card-col col-xl-4 col-lg-3 col-md-3 col-12 border-right">
+            <div class="card-col col-xl-4 col-lg-6 col-md-6 col-12 border-right">
               <div class="card-body">
                 <h4 class="card-title px-0"><?= Yii::t('controllers', 'dashboard_index_lbl_opportunities'); ?></h4>
                 <h3 class="bg-primary font-white text-center rounded p-2"><?= Yii::t('controllers', 'dashboard_index_lbl_yourStatus', ['#status' => $userData->statusAccount->{'name_' . Yii::app()->language}]); ?></h3>
               </div>
             </div>
-            <div class="card-col col-xl-8 col-lg-8 col-md-8 col-12">
+            <div class="card-col col-xl-8 col-lg-6 col-md-6 col-12">
               <div class="d-flex align-items-center justify-content-center flex-column flex-row h-100">
                 <p class="mb-1 mt-2"><?= Yii::t('models', 'sprStatuses_attr_max_levels_full', ['#count' => $userData->statusAccount->max_levels]); ?> <?= $userData->status_account != Users::STATUSMAX ? CHtml::link(Yii::t('controllers', 'dashboard_index_btn_buyStatus'), '#', ['id' => 'buyStatusLink_board']) : ''; ?></p>
                 <p class="mb-1"><?= Yii::t('models', 'sprStatuses_attr_max_coin_buy_summ_full', ['#summ' => $userData->statusAccount->max_coin_buy_summ]); ?></p>
@@ -59,8 +59,8 @@
     </div>
 </div>
 
-<div class="row gutters mt-5">
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card grid-margin">
+<div class="row gutters my-5">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 stretch-card">
         <div class="card bg-gradient-danger card-img-holder text-white">
             <div class="card-body">
               <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
@@ -110,7 +110,7 @@
                                         'disabled' => $userBalance->balance <= 0,
                                         'htmlOptions' => [
                                             'id' => 'outLink_dash',
-                                            'class' => 'btn-inverse-dark btn-light'
+                                            'class' => 'btn-inverse-dark btn-light px-0'
                                         ]
                                     ]);
                                 ?>
@@ -121,7 +121,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card grid-margin">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 stretch-card">
         <div class="card bg-gradient-info card-img-holder text-white">
             <div class="card-body">
               <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
@@ -160,7 +160,7 @@
                                     'buttonType' => 'link',
                                     'url' => $this->createUrl('/exchange'),
                                     'htmlOptions' => [
-                                        'class' => 'btn-inverse-dark btn-light'
+                                        'class' => 'btn-inverse-dark btn-light px-0'
                                     ]
                                 ]);?>
                             </div>
@@ -174,7 +174,7 @@
                                         'label' => Yii::t('controllers', 'dashboard_index_btn_sell'),
                                         'disabled' => $userBalance->now_coins = 0,
                                         'htmlOptions' => [
-                                            'class' => 'btn-inverse-dark btn-light'
+                                            'class' => 'btn-inverse-dark btn-light px-0'
                                         ]
                                     ]);
                                 ?>
@@ -185,7 +185,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card grid-margin">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 stretch-card">
         <div class="card bg-gradient-success card-img-holder text-white">
             <div class="card-body">
               <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
@@ -225,7 +225,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-lg-3 col-md-3 co0l-sm-12 stretch-card grid-margin">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 stretch-card">
         <div class="card bg-gradient-primary card-img-holder text-white">
             <div class="card-body">
               <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
@@ -270,7 +270,7 @@
 </div>
 
 <div class="row gutters">
-  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card">
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 stretch-card">
       <div class="card bg-gradient-secondary card-img-holder text-white">
             <div class="card-body">
               <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
@@ -296,7 +296,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 stretch-card">
         <div class="card bg-gradient-warning card-img-holder text-white">
             <div class="card-body">
               <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
@@ -322,7 +322,7 @@
             </div>
         </div>
     </div>
-  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card">
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 stretch-card">
       <div class="card bg-gradient-success card-img-holder text-white">
             <div class="card-body">
               <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
@@ -348,7 +348,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 stretch-card">
         <div class="card bg-gradient-info card-img-holder text-white">
             <div class="card-body">
               <img src="https://www.bootstrapdash.com/demo/purple-admin-free/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
@@ -528,7 +528,9 @@
                             <?= CHtml::dropDownList('operation_type', $operation_type, UsersBalance::model()->operationType(), ['class' => 'form-control form-control-sm', 'empty' => Yii::t('controllers', 'dashboard_index_lbl_chooseActionType')]); ?>
                         </div>
                         <div class="col-md-5 text-center filterMobile">
+                          <div class="d-flex justify-content-between align-items-center">
                             <?= CHtml::textField('summ_min', '', ['class' => 'form-control form-control-sm inline', 'placeholder' => Yii::t('controllers', 'dashboard_index_lbl_summForm')]).' - '.CHtml::textField('summ_max', '', ['class' => 'form-control form-control-sm inline', 'placeholder' => Yii::t('controllers', 'dashboard_index_lbl_summTo')]); ?>
+                          </div>
                         </div>
                         <div class="col-md-4">
                             <?php $this->widget('bootstrap.widgets.TbDateRangePicker', [
