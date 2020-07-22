@@ -5867,3 +5867,4 @@ li.page-item.next .page-link::before {
 }
 .input-helper-checkbox:checked {background: #b66dff;}
 .form-label-group .checkbox input:not(:placeholder-shown) ~ label {display: flex;font-size: 0.875rem;line-height: 1.5;}
+#rCopyLink {font-size: 3em;cursor: pointer;}
