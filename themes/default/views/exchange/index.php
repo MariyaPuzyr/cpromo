@@ -1,9 +1,11 @@
-<?php 
-    $this->pageTitle = Yii::t('controllers', 'exchange_index_title');
-    #Yii::app()->clientScript->registerScript('updateGrids', 'updateExchangeGrids()');
-    
-    Yii::app()->clientScript->registerScriptFile($this->assetsBase.'/vendor/chartjs/Chart.bundle.min.js', CClientScript::POS_END);
-    Yii::app()->clientScript->registerScript('charts', "
+<div class="card">
+  <div class="card-body">
+      <?php
+      $this->pageTitle = Yii::t('controllers', 'exchange_index_title');
+      #Yii::app()->clientScript->registerScript('updateGrids', 'updateExchangeGrids()');
+
+      Yii::app()->clientScript->registerScriptFile($this->assetsBase.'/vendor/chartjs/Chart.bundle.min.js', CClientScript::POS_END);
+      Yii::app()->clientScript->registerScript('charts', "
         var ctx = document.getElementById('coinsChart').getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'line',
@@ -13,7 +15,7 @@
                     label: '".Yii::t('controllers', 'exchange_index_lbl_coinCourseChart')."',
                     data: ". json_encode($crts['value']).",
                     fill: false,
-                    borderColor: ['#007bff'],
+                    borderColor: ['#ea4c89'],
                     borderWidth: 1
                 }]
             },
@@ -23,249 +25,152 @@
             }
         });
     ");
-    
-    $this->widget('bootstrap.widgets.TbButton', [
-        'label' => 'Схлопнуть',
-        'buttonType' => 'link',
-        'url' => $this->createUrl('/exchange/closeOrder')
-        ]);
-?>
-<div class="row gutters">
-    <div class="col-md-12">
+
+      $this->widget('bootstrap.widgets.TbButton', [
+          'label' => 'Схлопнуть',
+          'buttonType' => 'link',
+          'url' => $this->createUrl('/exchange/closeOrder'),
+          'htmlOptions' => [
+              'class' => 'btn-gradient-danger'
+          ]
+      ]);
+      ?>
+    <div class="row mt-2">
+      <div class="col-md-12">
         <canvas class="chartjs-render-monitor" id="coinsChart" style="max-height: 300px"></canvas>
+      </div>
     </div>
+  </div>
 </div>
 
-<div class="row gutters mt-3">
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
-            <div class="card-body">
-                <div class="stats-widget">
-                    <div class="stats-widget-header">
-                        <i class="fas fa-list-ol"></i>
-                    </div>
-                    <div class="stats-widget-body">
-                        <ul class="row no-gutters">
-                            <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'exchange_index_lbl_countOrders'); ?></h6>
-                            </li>
-                            <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h4 class="total" id="nowCountClosed"><?= $count['closed'];?></h4>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
+<div class="card card-statistics my-4">
+  <div class="row">
+    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12 border-right">
+      <div class="card-body">
+        <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+          <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>
+          <div class="wrapper text-center text-sm-left">
+            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_countOrders'); ?></p>
+            <div class="fluid-container">
+              <h3 class="mb-0 font-weight-medium" id="nowCountClosed"><?= $count['closed'];?></h3>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
-            <div class="card-body">
-                <div class="stats-widget">
-                    <div class="stats-widget-header">
-                        <i class="fas fa-list-ol"></i>
-                    </div>
-                    <div class="stats-widget-body">
-                        <ul class="row no-gutters">
-                            <li class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'exchange_index_lbl_countBuyClosed'); ?></h6>
-                            </li>
-                            <li class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col">
-                                <h4 class="total" id="nowCountClosed"><?= $count['count_buy_closed'];?></h4>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12 border-right">
+      <div class="card-body">
+        <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+          <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>
+          <div class="wrapper text-center text-sm-left">
+            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_countBuyClosed'); ?></p>
+            <div class="fluid-container">
+              <h3 class="mb-0 font-weight-medium" id="nowCountClosed"><?= $count['count_buy_closed'];?></h3>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
-            <div class="card-body">
-                <div class="stats-widget">
-                    <div class="stats-widget-header">
-                        <i class="fas fa-list-ol"></i>
-                    </div>
-                    <div class="stats-widget-body">
-                        <ul class="row no-gutters">
-                            <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'exchange_index_lbl_countSellClosed'); ?></h6>
-                            </li>
-                            <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h4 class="total" id="nowCountClosed"><?= $count['count_sell_closed'];?></h4>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12 border-right">
+      <div class="card-body">
+        <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+          <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>
+          <div class="wrapper text-center text-sm-left">
+            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_countSellClosed'); ?></p>
+            <div class="fluid-container">
+              <h3 class="mb-0 font-weight-medium" id="nowCountClosed"><?= $count['count_sell_closed'];?></h3>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
-            <div class="card-body">
-                <div class="stats-widget">
-                    <div class="stats-widget-header">
-                        <i class="fas fa-list-ol"></i>
-                    </div>
-                    <div class="stats-widget-body">
-                        <ul class="row no-gutters">
-                            <li class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'exchange_index_lbl_emission'); ?></h6>
-                            </li>
-                            <li class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col">
-                                <h4 class="total" id="nowCountClosed">45000000CP</h4>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12">
+      <div class="card-body">
+        <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+          <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>
+          <div class="wrapper text-center text-sm-left">
+            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_emission'); ?></p>
+            <div class="fluid-container">
+              <h3 class="mb-0 font-weight-medium" id="nowCountClosed">45000000CP</h3>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="row gutters mt-3">
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
-            <div class="card-body">
-                <div class="stats-widget">
-                    <div class="stats-widget-header">
-                        <i class="icon-stats-bars""></i>
-                    </div>
-                    <div class="stats-widget-body">
-                        <ul class="row no-gutters">
-                            <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'exchange_index_lbl_coinCourse'); ?></h6>
-                            </li>
-                            <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h4 class="total" id="nowCourse"><?= $count['course'].'$'; ?></h4>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-        <div class="card">
-            <div class="card-body">
-                <div class="stats-widget">
-                    <div class="stats-widget-header">
-                        <i class="icon-stats-bars""></i>
-                    </div>
-                    <div class="stats-widget-body">
-                        <ul class="row no-gutters">
-                            <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'exchange_index_lbl_coinCourseEnd'); ?></h6>
-                            </li>
-                            <li class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
-                                <h4 class="total" id="nowCourse"><?= $count['course_end'].'$'; ?></h4>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
-            <div class="card-body">
-                <div class="stats-widget">
-                    <div class="stats-widget-header">
-                        <i class="fas fa-cart-arrow-down""></i>
-                    </div>
-                    <div class="stats-widget-body">
-                        <ul class="row no-gutters">
-                            <li class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'exchange_index_lbl_countBuy'); ?></h6>
-                            </li>
-                            <li class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col">
-                                <h4 class="total" id="nowCountBuy"><?= number_format($count['buy'],2,'.','').'$'; ?></h4>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12">
-        <div class="card">
-            <div class="card-body">
-                <div class="stats-widget">
-                    <div class="stats-widget-header">
-                        <i class="fas fa-list-ol"></i>
-                    </div>
-                    <div class="stats-widget-body">
-                        <ul class="row no-gutters">
-                            <li class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'exchange_index_lbl_countOrdersNeedBuy'); ?></h6>
-                            </li>
-                            <li class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col">
-                                <h4 class="total" id="nowCountBuy"><?= $count['count_buy']; ?></h4>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php /*
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
-            <div class="card-body">
-                <div class="stats-widget">
-                    <div class="stats-widget-header">
-                        <i class="fas fa-cart-plus"></i>
-                    </div>
-                    <div class="stats-widget-body">
-                        <ul class="row no-gutters">
-                            <li class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'exchange_index_lbl_countSell'); ?></h6>
-                            </li>
-                            <li class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col">
-                                <h4 class="total" id="nowCountSell"><?= $count['sell'].'CP';?></h4>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
-            <div class="card-body">
-                <div class="stats-widget">
-                    <div class="stats-widget-header">
-                        <i class="fas fa-list-ol"></i>
-                    </div>
-                    <div class="stats-widget-body">
-                        <ul class="row no-gutters">
-                            <li class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col">
-                                <h6 class="title"><?= Yii::t('controllers', 'exchange_index_lbl_countOrdersNeedSell'); ?></h6>
-                            </li>
-                            <li class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col">
-                                <h4 class="total" id="nowCountBuy"><?= $count['count_sell']; ?></h4>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> */ ?>
+  </div>
 </div>
 
-<div class="row gutters">
-    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 p-3">
-        <h4><?= Yii::t('controllers', 'exchange_index_lbl_ordersSell'); ?></h4>
-        <?php $this->widget('bootstrap.widgets.TbButton', [
-            'context' => 'primary',
-            'block' => true,
-            'label' => Yii::t('controllers', 'exchange_index_btn_order'),
-            'disabled' => ($balance->coins - $balance->coins_freeze || !$button_disabled) > 0 ? false : true,
-            'htmlOptions' => ['id' => 'btn_order_sell']
-        ]); ?>
-        <?php $this->widget('bootstrap.widgets.TbGridView', [
+<div class="card card-statistics my-4">
+  <div class="row">
+    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12 border-right">
+      <div class="card-body">
+        <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+          <i class="mdi mdi mdi-chart-bar text-primary mr-0 mr-sm-4 icon-lg"></i>
+          <div class="wrapper text-center text-sm-left">
+            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_coinCourse'); ?></p>
+            <div class="fluid-container">
+              <h3 class="mb-0 font-weight-medium" id="nowCourse"><?= $count['course'].'$'; ?></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12 border-right">
+      <div class="card-body">
+        <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+          <i class="mdi mdi mdi-chart-bar text-primary mr-0 mr-sm-4 icon-lg"></i>
+          <div class="wrapper text-center text-sm-left">
+            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_coinCourseEnd'); ?></p>
+            <div class="fluid-container">
+              <h3 class="mb-0 font-weight-medium" id="nowCourse"><?= $count['course_end'].'$'; ?></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12 border-right">
+      <div class="card-body">
+        <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+          <i class="mdi mdi mdi-cart-plus text-primary mr-0 mr-sm-4 icon-lg"></i>
+          <div class="wrapper text-center text-sm-left">
+            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_countBuy'); ?></p>
+            <div class="fluid-container">
+              <h3 class="mb-0 font-weight-medium" id="nowCountBuy"><?= number_format($count['buy'],2,'.','').'$'; ?></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12">
+      <div class="card-body">
+        <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+          <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>
+          <div class="wrapper text-center text-sm-left">
+            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_countOrdersNeedBuy'); ?></p>
+            <div class="fluid-container">
+              <h3 class="mb-0 font-weight-medium" id="nowCountBuy"><?= $count['count_buy']; ?></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title mb-4"><?= Yii::t('controllers', 'exchange_index_lbl_ordersSell'); ?></h4>
+            <?php $this->widget('bootstrap.widgets.TbButton', [
+                'context' => 'primary',
+                'block' => true,
+                'label' => Yii::t('controllers', 'exchange_index_btn_order'),
+                'disabled' => ($balance->coins - $balance->coins_freeze || !$button_disabled) > 0 ? false : true,
+                'htmlOptions' => ['id' => 'btn_order_sell', 'class' => 'btn-gradient-primary']
+            ]); ?>
+            <?php $this->widget('bootstrap.widgets.TbGridView', [
                 'id' => 'orderSell',
                 'dataProvider' => $order->search(false, [CoinsOrder::OTYPE_SELL], CoinsOrder::OSTAT_WAIT, 't.id ASC', 10),
                 'type' => 'stripped',
@@ -282,18 +187,22 @@
                     #['name' => 'count_now', 'type' => 'html', 'value' => '$data->count_now."CP"'],
                     ['header' => Yii::t('models', 'coinsOrder_attr_buy_summ'), 'type' => 'raw', 'value' => '($data->count_now*$data->price_perOne)."$"'],
                 ]
-        ]); ?>
+            ]); ?>
+        </div>
+      </div>
     </div>
-    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 border-right p-3">
-        <h4><?= Yii::t('controllers', 'exchange_index_lbl_ordersBuy'); ?></h4>
-        <?php $this->widget('bootstrap.widgets.TbButton', [
-            'context' => 'primary',
-            'block' => true,
-            'label' => Yii::t('controllers', 'exchange_index_btn_order'),
-            'disabled' => (($balance->balance - $balance->outs_freeze - $balance->buy_freeze) || !$button_disabled) > 0 ? false : true,
-            'htmlOptions' => ['id' => 'btn_order_buy']
-        ]); ?>
-        <?php $this->widget('bootstrap.widgets.TbGridView', [
+    <div class="col-md-6 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title mb-4"><?= Yii::t('controllers', 'exchange_index_lbl_ordersBuy'); ?></h4>
+          <?php $this->widget('bootstrap.widgets.TbButton', [
+              'context' => 'primary',
+              'block' => true,
+              'label' => Yii::t('controllers', 'exchange_index_btn_order'),
+              'disabled' => (($balance->balance - $balance->outs_freeze - $balance->buy_freeze) || !$button_disabled) > 0 ? false : true,
+              'htmlOptions' => ['id' => 'btn_order_buy', 'class' => 'btn-gradient-primary']
+          ]); ?>
+            <?php $this->widget('bootstrap.widgets.TbGridView', [
                 'id' => 'orderBuy',
                 'dataProvider' => $order->search(false, [CoinsOrder::OTYPE_BUY], CoinsOrder::OSTAT_WAIT, 't.id ASC', 10),
                 'type' => 'stripped',
@@ -308,15 +217,17 @@
                     #['name' => 'price_perOne', 'type' => 'raw', 'value' => '$data->price_perOne."$"'],
                     ['name' => 'buy_summ', 'type' => 'html', 'value' => 'number_format($data->buy_summ,2,".","")."$"'],
                 ]
-        ]); ?>
+            ]); ?>
+        </div>
+      </div>
     </div>
 </div>
 
-<div class="row gutters mt-3">
+<div class="row mb-4">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <div class="card">
-            <div class="card-header"><strong><?= Yii::t('controllers', 'exchange_index_lbl_orders'); ?></strong></div>
-            <div class="card-body bg-white">
+        <div class="card bg-white border-none">
+            <div class="card-body">
+              <h4 class="card-header px-0"><?= Yii::t('controllers', 'exchange_index_lbl_orders'); ?></h4>
                 <?php 
                     $this->widget('bootstrap.widgets.TbGridView', [
                         'id' => 'orders_buy_list',
@@ -367,13 +278,11 @@
     </div>
 </div>
 
-<div class="row gutters mt-3">
+<div class="row mb-4">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <div class="card">
-            <div class="card-header">
-                <strong><?= Yii::t('controllers', 'exchange_index_lbl_coinsBuy'); ?></strong>
-            </div>
-            <div class="card-body bg-white">
+        <div class="card bg-white border-none">
+            <div class="card-body">
+              <h4 class="card-header px-0"><?= Yii::t('controllers', 'exchange_index_lbl_coinsBuy'); ?></h4>
                 <?php 
                     $this->widget('bootstrap.widgets.TbGridView', [
                         'id' => 'coinsTable_buy',
@@ -398,13 +307,11 @@
     </div>
 </div>
 
-<div class="row gutters mt-3">
+<div class="row mb-4">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <div class="card">
-            <div class="card-header">
-                <strong><?= Yii::t('controllers', 'exchange_index_lbl_coinsProfit'); ?></strong>
-            </div>
-            <div class="card-body bg-white">
+        <div class="card bg-white border-none">
+            <div class="card-body">
+              <h4 class="card-header px-0"><?= Yii::t('controllers', 'exchange_index_lbl_coinsProfit'); ?></h4>
                 <?php 
                     $this->widget('bootstrap.widgets.TbGridView', [
                         'id' => 'coinsTable',
