@@ -5813,7 +5813,7 @@ li.page-item.active .page-link {
 .card-body #level_stat > div .table thead tr th a {
     color: #212529 !important;
 }
-.card.bg-white.border-none .sort-link {font-family: "ubuntu-regular", sans-serif;font-weight: bold;}
+/*.card.bg-white.border-none .sort-link {font-family: "ubuntu-regular", sans-serif;font-weight: bold;}*/
 .button-column {display: flex;justify-content: space-around;}
 .button-column a, .table-responsive .sort-link {color: #212529;}
 .button-column a:hover {color: #b66dff;}

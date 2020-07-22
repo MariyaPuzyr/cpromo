@@ -69,7 +69,7 @@
           <entry key="gitignore" value="3" />
           <entry key="js" value="6" />
           <entry key="json" value="1" />
-          <entry key="php" value="68" />
+          <entry key="php" value="70" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -78,14 +78,14 @@
           <entry key="CSS" value="11" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="6" />
-          <entry key="PHP" value="68" />
+          <entry key="PHP" value="70" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="817" />
+          <entry key="css" value="822" />
           <entry key="gitignore" value="30" />
           <entry key="js" value="41" />
           <entry key="php" value="2103" />
@@ -93,7 +93,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="817" />
+          <entry key="CSS" value="822" />
           <entry key="JavaScript" value="41" />
           <entry key="PHP" value="2103" />
           <entry key="PLAIN_TEXT" value="30" />
@@ -112,11 +112,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/views/system/error.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/views/dashboard/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="87" column="33" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_3.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="707" column="22" selection-start-line="707" selection-start-column="9" selection-end-line="707" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -130,11 +148,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="755">
-              <caret line="5871" column="30" selection-start-line="5871" selection-start-column="30" selection-end-line="5871" selection-end-column="30" />
+            <state relative-caret-position="689">
+              <caret line="5874" column="1" selection-start-line="5874" selection-start-column="1" selection-end-line="5874" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -152,11 +170,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>card-col col-xl-4 col-lg-3 col-md-3 col-12 border-right</find>
-      <find>card-col col-xl-4 col-lg-3 col-md-6 col-12 border-right</find>
-      <find>pl-0</find>
-      <find>grid-margin</find>
-      <find>o0l-sm-12</find>
       <find>row bg-white p-3</find>
       <find>bg-white p-3</find>
       <find>bg-white mt-3 p-3</find>
@@ -182,6 +195,11 @@
       <find>rnetwork_index_lbl_countRefsCoins</find>
       <find>rCop</find>
       <find>main.css</find>
+      <find>font-weight: bold</find>
+      <find>smal</find>
+      <find>dashboard_index_lbl_activ_profit</find>
+      <find>small text-right text-danger</find>
+      <find>number_format</find>
     </findStrings>
     <replaceStrings>
       <replace>\</replace>
@@ -229,8 +247,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/themes/default/views/user/profile.php" />
         <option value="$PROJECT_DIR$/themes/default/views/rnetwork/index.php" />
-        <option value="$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css" />
         <option value="$PROJECT_DIR$/themes/default/views/system/error.php" />
+        <option value="$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css" />
       </list>
     </option>
   </component>
@@ -240,8 +258,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="2409" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2045" />
     <option name="y" value="-8" />
     <option name="width" value="974" />
     <option name="height" value="938" />
@@ -328,6 +346,14 @@
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="default" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -383,18 +409,18 @@
       <workItem from="1595318302221" duration="13000" />
       <workItem from="1595322300317" duration="15885000" />
       <workItem from="1595399013442" duration="15663000" />
-      <workItem from="1595419859280" duration="818000" />
+      <workItem from="1595419859280" duration="1460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57251000" />
+    <option name="totallyTimeSpent" value="57893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39401296" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.39401296" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -422,13 +448,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbGridView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="152" column="4" selection-start-line="152" selection-start-column="4" selection-end-line="152" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/MApp.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -704,13 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/dashboard/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="112" column="88" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/views/user/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -746,17 +758,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="5871" column="30" selection-start-line="5871" selection-start-column="30" selection-end-line="5871" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/views/system/error.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="707" column="22" selection-start-line="707" selection-start-column="9" selection-end-line="707" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/dashboard/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="87" column="33" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="5874" column="1" selection-start-line="5874" selection-start-column="1" selection-end-line="5874" selection-end-column="1" />
         </state>
       </provider>
     </entry>
