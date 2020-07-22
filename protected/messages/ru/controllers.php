@@ -317,7 +317,7 @@ return [
     'user_recovery_btn_recovery' => 'Восстановить',
     
     'user_profile_index_title' => 'Профиль пользователя',
-    'user_profile_index_titleHead' => '<span class="block">Профиль</span> <span class="text-primary small">Ваш ID #referral_id</span>',
+    'user_profile_index_titleHead' => '<span class="block">Профиль</span> <h3 class="text-primary small">Ваш ID #referral_id</h3>',
     'user_profile_index_lbl_statusBlock' => 'Аккаунт заблокирован!',
     'user_profile_index_lbl_contact' => 'Контактные сведения',
     'user_profile_index_lbl_finance' => 'Указать финансовые аккаунты для вывода средств',

@@ -5815,7 +5815,7 @@ li.page-item.active .page-link {
 }
 .card.bg-white.border-none .sort-link {font-family: "ubuntu-regular", sans-serif;font-weight: bold;}
 .button-column {display: flex;justify-content: space-around;}
-.button-column a {color: #212529;}
+.button-column a, .table-responsive .sort-link {color: #212529;}
 .button-column a:hover {color: #b66dff;}
 .with-list-arrow ul li::before {
     content: '\F142';
@@ -5856,3 +5856,13 @@ li.page-item.next .page-link::before {
         max-width: 25%;
     }
 }
+.input-helper-checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #b66dff;
+    transition-duration: 250ms;
+    margin-right: 5px;
+    border-radius: 0;
+}
+.input-helper-checkbox:checked {background: #b66dff;}
+.form-label-group .checkbox input:not(:placeholder-shown) ~ label {display: flex;font-size: 0.875rem;line-height: 1.5;}

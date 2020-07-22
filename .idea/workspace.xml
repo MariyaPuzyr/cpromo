@@ -63,10 +63,10 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="9" />
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="js" value="6" />
           <entry key="json" value="1" />
-          <entry key="php" value="56" />
+          <entry key="php" value="63" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -75,24 +75,24 @@
           <entry key="CSS" value="9" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="6" />
-          <entry key="PHP" value="56" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PHP" value="63" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="709" />
+          <entry key="css" value="782" />
           <entry key="gitignore" value="30" />
           <entry key="js" value="41" />
-          <entry key="php" value="1082" />
+          <entry key="php" value="1539" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="709" />
+          <entry key="CSS" value="782" />
           <entry key="JavaScript" value="41" />
-          <entry key="PHP" value="1082" />
+          <entry key="PHP" value="1539" />
           <entry key="PLAIN_TEXT" value="30" />
         </counts>
       </usages-collector>
@@ -100,11 +100,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="643">
-              <caret line="5851" column="54" selection-start-line="5851" selection-start-column="54" selection-end-line="5851" selection-end-column="54" />
+            <state relative-caret-position="43">
+              <caret line="5827" selection-start-line="5827" selection-end-line="5827" />
             </state>
           </provider>
         </entry>
@@ -112,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/views/dashboard/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+            <state relative-caret-position="669">
+              <caret line="112" column="88" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="88" />
               <folding>
                 <element signature="e#4677#4683#1#HTML" expanded="true" />
                 <element signature="e#5121#5127#1#HTML" expanded="true" />
@@ -126,6 +126,36 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/default/views/user/profile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="599">
+              <caret line="127" column="40" selection-start-line="127" selection-start-column="40" selection-end-line="127" selection-end-column="40" />
+              <folding>
+                <element signature="e#2663#3272#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbActiveForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="418" column="76" selection-start-line="418" selection-start-column="76" selection-end-line="418" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbBaseInputWidget.php">
           <provider selected="true" editor-type-id="text-editor" />
@@ -134,8 +164,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbButton.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
+            <state relative-caret-position="157">
+              <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/views/user/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="74" column="171" selection-start-line="74" selection-start-column="171" selection-end-line="74" selection-end-column="171" />
             </state>
           </provider>
         </entry>
@@ -144,36 +183,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>card-header pl-0</find>
-      <find>card-body bg-white</find>
-      <find>bg-white</find>
-      <find>col-xl-4 col-lg-4 col-md-4 col-sm-4</find>
-      <find>text-muted</find>
-      <find>mt-3</find>
-      <find>pri</find>
-      <find>btn-gradient-light</find>
-      <find>icon-coin-dollar</find>
-      <find>col-xl-4 col-lg-4 col-md-4 col-sm-4 col</find>
-      <find>inve</find>
-      <find>col-xl-3 col-lg-3 col-md-3 col-sm-12</find>
-      <find>secondary</find>
-      <find>warning</find>
-      <find>info</find>
-      <find>card bg-gradient-info card-img-holder text-white</find>
-      <find>bg-gra</find>
-      <find>img</find>
-      <find>ard-body</find>
-      <find>bg-g</find>
       <find>dashboard_index_lbl_balance_coinsBuy_freeze</find>
       <find>title</find>
       <find>col-xl-3 col-lg-3 col-md-3 col-sm-12 stretch-card grid-margin</find>
       <find>card bg-gradient-primary card-img-holder text-white</find>
-      <find>o0l-sm-12</find>
       <find>card-statistics</find>
       <find>card-col col-xl-4 col-lg-3 col-md-3 col-12 border-right</find>
       <find>card-col col-xl-4 col-lg-3 col-md-6 col-12 border-right</find>
       <find>pl-0</find>
       <find>grid-margin</find>
+      <find>o0l-sm-12</find>
+      <find>row bg-white p-3</find>
+      <find>bg-white p-3</find>
+      <find>bg-white mt-3 p-3</find>
+      <find>col-md-3 offset-md-2 text-center mb-2-mobileco</find>
+      <find>col-md-3 offset-md-2 text-center mb-2-mobile</find>
+      <find>lastname</find>
+      <find>form-label-group</find>
+      <find>mb-3</find>
+      <find>user_profile_index_lbl_statusBlock</find>
+      <find>text-primary small</find>
+      <find>user_profile_index_titleHead</find>
+      <find>border-bottom text-center pb-4</find>
+      <find>btn-dan</find>
+      <find>cemail</find>
+      <find>cem</find>
+      <find>subscribe_news</find>
+      <find>dan</find>
+      <find>checkboxGroup</find>
+      <find>form-group row</find>
+      <find>border-none</find>
     </findStrings>
     <replaceStrings>
       <replace>\</replace>
@@ -203,7 +242,6 @@
         <option value="$PROJECT_DIR$/../YiiFramework/framework/web/js/source/jquery.js" />
         <option value="$PROJECT_DIR$/themes/default/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/widgets/ExtMenu.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/themes/default/views/layouts/_leftMenu.php" />
         <option value="$PROJECT_DIR$/themes/default/views/news/index.php" />
         <option value="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbThumbnails.php" />
@@ -216,7 +254,12 @@
         <option value="$PROJECT_DIR$/themes/default/views/system/page.php" />
         <option value="$PROJECT_DIR$/themes/default/views/finance/index.php" />
         <option value="$PROJECT_DIR$/themes/default/views/dashboard/index.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbActiveForm.php" />
+        <option value="$PROJECT_DIR$/protected/messages/en/controllers.php" />
+        <option value="$PROJECT_DIR$/protected/messages/ru/controllers.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css" />
+        <option value="$PROJECT_DIR$/themes/default/views/user/profile.php" />
       </list>
     </option>
   </component>
@@ -227,7 +270,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="843" />
+    <option name="x" value="2178" />
     <option name="y" value="-8" />
     <option name="width" value="974" />
     <option name="height" value="938" />
@@ -240,7 +283,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,74 +293,6 @@
             <path>
               <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
               <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="protected" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="protected" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="protected" type="462c0819:PsiDirectoryNode" />
-              <item name="extensions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="protected" type="462c0819:PsiDirectoryNode" />
-              <item name="extensions" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="protected" type="462c0819:PsiDirectoryNode" />
-              <item name="extensions" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="widgets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="protected" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="protected" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="protected" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="protected" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="protected" type="462c0819:PsiDirectoryNode" />
-              <item name="widgets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -326,58 +300,6 @@
               <item name="cpromo" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
@@ -385,79 +307,6 @@
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="default" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="exchange" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="finance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="rights" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="rights" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="rnetwork" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
@@ -471,6 +320,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -511,18 +361,18 @@
       <workItem from="1595227871533" duration="15113000" />
       <workItem from="1595318302221" duration="13000" />
       <workItem from="1595322300317" duration="15885000" />
-      <workItem from="1595399013442" duration="4241000" />
+      <workItem from="1595399013442" duration="11230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45011000" />
+    <option name="totallyTimeSpent" value="52000000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3883495" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.38754046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -550,37 +400,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/components/MBaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/backups/cpromo/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/user/controllers/ActivateController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/DashboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/user/controllers/LogoutController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -671,13 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/views/layouts/_leftMenu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -755,13 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="277" column="27" selection-start-line="277" selection-start-column="27" selection-end-line="277" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbActiveForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -849,20 +654,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/dashboard/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="237" selection-start-line="237" selection-end-line="237" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/messages/en/controllers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="308" column="78" selection-start-line="308" selection-start-column="78" selection-end-line="308" selection-end-column="78" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/messages/ru/controllers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="319" column="103" selection-start-line="319" selection-start-column="98" selection-end-line="319" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbActiveForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="418" column="76" selection-start-line="418" selection-start-column="76" selection-end-line="418" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbBaseInputWidget.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbButton.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
+        <state relative-caret-position="157">
+          <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/user/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="74" column="171" selection-start-line="74" selection-start-column="171" selection-end-line="74" selection-end-column="171" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/views/dashboard/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+        <state relative-caret-position="669">
+          <caret line="112" column="88" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="88" />
           <folding>
             <element signature="e#4677#4683#1#HTML" expanded="true" />
             <element signature="e#5121#5127#1#HTML" expanded="true" />
@@ -876,8 +729,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="5851" column="54" selection-start-line="5851" selection-start-column="54" selection-end-line="5851" selection-end-column="54" />
+        <state relative-caret-position="43">
+          <caret line="5827" selection-start-line="5827" selection-end-line="5827" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/user/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="127" column="40" selection-start-line="127" selection-start-column="40" selection-end-line="127" selection-end-column="40" />
+          <folding>
+            <element signature="e#2663#3272#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

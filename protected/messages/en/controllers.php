@@ -306,7 +306,7 @@ return [
     'user_recovery_btn_recovery' => 'Restore',
 
     'user_profile_index_title' => 'user Profile',
-    'user_profile_index_titleHead' => '<span class= "block">Profile</span> <span class= "text-primary small">Your ID #referral_id</span>',
+    'user_profile_index_titleHead' => '<span class= "block">Profile</span> <h3 class= "text-primary small">Your ID #referral_id</h3>',
     'user_profile_index_lbl_statusBlock' => ' Account blocked!',
     'user_profile_index_lbl_contact' => 'Contact information',
     'user_profile_index_lbl_finance' => 'Specified financial accounts for displaying cross-sections',
