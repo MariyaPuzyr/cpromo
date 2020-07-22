@@ -53,7 +53,7 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="text-center">
-                <?= CHtml::image($model->photo ? 'data:image/png;base64,'.base64_encode(file_get_contents(Yii::getPathOfAlias('webroot.uploads').'/user_photo/'.$model->photo)) : $this->assetsBase.'/img/no_photo.jpg', '', ['class' => 'profilePhoto img-lg rounded-circle']); ?>
+                <?= CHtml::image($model->photo ? 'data:image/png;base64,'.base64_encode(file_get_contents(Yii::getPathOfAlias('webroot.uploads').'/user_photo/'.$model->photo)) : $this->assetsBase.'/img/no_photo.jpg', '', ['class' => 'profilePhoto img-lg rounded-circle mb-4']); ?>
                 <?php /*
             <span class="btn btn-block fileinput-button btn-primary mt-2" id="fileTitleBut">
                 <span><?php echo Yii::t('controllers', 'user_profile_index_btnUploadPhoto'); ?></span>
@@ -116,7 +116,7 @@
                   'block' => true,
                   'htmlOptions' => [
                       'id' => 'fin_acc',
-                      'class' => 'btn-gradient-primary'
+                      'class' => 'btn-gradient-primary px-0'
                   ]
               ]); ?>
           </div>
