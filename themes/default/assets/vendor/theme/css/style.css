@@ -5682,7 +5682,11 @@ input[type="button"].btn-block {
     .card-columns .card {
       display: inline-block;
       width: 100%; } }
-
+@media (min-width: 1024px) {
+  .card-columns {
+    column-count: 4;
+  }
+}
 .accordion > .card {
   overflow: hidden; }
   .accordion > .card:not(:first-of-type) .card-header:first-child {
@@ -12548,7 +12552,7 @@ dl {
   .table thead th {
     border-top: 0;
     border-bottom-width: 1px;
-    font-family: "ubuntu-medium", sans-serif;
+    font-family: "ubuntu-bold", sans-serif;
     font-weight: initial; }
     .table thead th i {
       margin-left: 0.325rem; }
@@ -13131,11 +13135,11 @@ dl {
         border-top: 0;
         padding: 1.25rem 0; }
         .sidebar .nav .nav-item.nav-profile .nav-link .nav-profile-image {
-          width: 44px;
-          height: 44px; }
+          width: 50px;
+          height: 50px; }
           .sidebar .nav .nav-item.nav-profile .nav-link .nav-profile-image img {
-            width: 44px;
-            height: 44px;
+            width: 50px;
+            height: 50px;
             border-radius: 100%; }
         .sidebar .nav .nav-item.nav-profile .nav-link .nav-profile-text {
           margin-left: 1rem; }
