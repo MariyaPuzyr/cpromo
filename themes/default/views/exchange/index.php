@@ -46,7 +46,7 @@
 
 <div class="card card-statistics my-4">
   <div class="row">
-    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12 border-right">
+    <div class="card-col col-xl-3 col-lg-6 col-md-6 col-12 border-right">
       <div class="card-body">
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>
@@ -59,7 +59,7 @@
         </div>
       </div>
     </div>
-    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12 border-right">
+    <div class="card-col col-xl-3 col-lg-6 col-md-6 col-12 border-right">
       <div class="card-body">
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>
@@ -72,7 +72,7 @@
         </div>
       </div>
     </div>
-    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12 border-right">
+    <div class="card-col col-xl-3 col-lg-6 col-md-6 col-12 border-right">
       <div class="card-body">
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>
@@ -85,7 +85,7 @@
         </div>
       </div>
     </div>
-    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12">
+    <div class="card-col col-xl-3 col-lg-6 col-md-6 col-12">
       <div class="card-body">
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>
@@ -103,7 +103,7 @@
 
 <div class="card card-statistics my-4">
   <div class="row">
-    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12 border-right">
+    <div class="card-col col-xl-3 col-lg-6 col-md-6 col-12 border-right">
       <div class="card-body">
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi mdi-chart-bar text-primary mr-0 mr-sm-4 icon-lg"></i>
@@ -116,7 +116,7 @@
         </div>
       </div>
     </div>
-    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12 border-right">
+    <div class="card-col col-xl-3 col-lg-6 col-md-6 col-12 border-right">
       <div class="card-body">
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi mdi-chart-bar text-primary mr-0 mr-sm-4 icon-lg"></i>
@@ -129,8 +129,8 @@
         </div>
       </div>
     </div>
-    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12 border-right">
-      <div class="card-body">
+    <div class="card-col col-xl-3 col-lg-6 col-md-6 col-12 border-right">
+      <div class="card-body pr-0">
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi mdi-cart-plus text-primary mr-0 mr-sm-4 icon-lg"></i>
           <div class="wrapper text-center text-sm-left">
@@ -142,7 +142,7 @@
         </div>
       </div>
     </div>
-    <div class="card-col col-xl-3 col-lg-4 col-md-4 col-12">
+    <div class="card-col col-xl-3 col-lg-6 col-md-6 col-12">
       <div class="card-body">
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>

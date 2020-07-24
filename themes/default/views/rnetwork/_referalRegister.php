@@ -18,10 +18,10 @@
             ]
         ]); ?>
         <div class="row mt-2">
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <?= $form->emailFieldGroup($model, 'email', ['hint' => Yii::t('models', 'user_register_attr_email_desc'), 'widgetOptions' => ['htmlOptions' => ['readonly' => $model->email ? true : false]]]); ?>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <?= $form->textFieldGroup($model, 'username'); ?>
             </div>
             
