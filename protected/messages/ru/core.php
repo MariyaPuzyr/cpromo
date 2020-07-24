@@ -81,7 +81,7 @@ return [
     'menu_head_btn_profile' => 'Профиль',
     'menu_head_btn_finance' => 'Финансы',
     'menu_head_btn_rnetwork' => 'Сеть',
-    'menu_head_btn_logout' => 'Выход',
+    'menu_head_btn_logout' => '<i class="mdi mdi-logout mr-2 text-primary"></i>Выход',
     
     'menu_left_dashboard' => 'Инфопанель',
     'menu_left_finance' => 'Финансы',
@@ -91,8 +91,9 @@ return [
     'menu_left_newsAndMedia' => 'Новости и медиа',
     'menu_left_support' => 'Поддержка',
     'menu_left_profile' => 'Профиль',
-    'menu_left_youID' => 'Ваш ID: #id',
-    
+    'menu_left_youID_text' => 'Ваш ID:',
+    'menu_left_youID' => '#id',
+
     
     'modal_changePassword_title' => 'Смена пароля',
     'modal_changeEmail_title' => 'Смена Email адреса',

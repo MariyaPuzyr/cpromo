@@ -81,7 +81,7 @@ return [
     'menu_head_btn_profile' => 'Profile',
     'menu_head_btn_finance' => 'Finance',
     'menu_head_btn_rnetwork' => 'Network',
-    'menu_head_btn_logout' => 'Exit',
+    'menu_head_btn_logout' => '<i class="mdi mdi-logout mr-2 text-primary"></i> Exit',
 
     'menu_left_dashboard' => 'Infopanel',
     'menu_left_finance' => 'Finance',
@@ -91,7 +91,8 @@ return [
     'menu_left_newsAndMedia' => 'news and media',
     'menu_left_support' => 'Support',
     'menu_left_profile' => 'Profile',
-    'menu_left_youID' => 'Your ID: #id',
+    'menu_left_youID_text' => 'Your ID:',
+    'menu_left_youID' => '#id',
 
 
     'modal_changePassword_title' => 'Change password',
