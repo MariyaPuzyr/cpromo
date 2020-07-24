@@ -20,7 +20,7 @@
         echo '</div>';
     } elseif($type == 'drop2') {
         echo '<div class="btn-group" role="group">';
-            echo '<button class="btn btn-default btn-withoutBG langBtn" data-toggle="dropdown" type="button" aria-expanded="false">'.CHtml::image(Yii::app()->theme->baseUrl.'/assets/img/flags/'.Yii::app()->language.'.png', Yii::app()->params->languages[Yii::app()->language], ['class' => 'lang_head']).'</button>';
+            echo '<button class="btn btn-default btn-withoutBG langBtn px-0" data-toggle="dropdown" type="button" aria-expanded="false">'.CHtml::image(Yii::app()->theme->baseUrl.'/assets/img/flags/'.Yii::app()->language.'.png', Yii::app()->params->languages[Yii::app()->language], ['class' => 'lang_head']).'</button>';
             echo '<div class="dropdown-menu dropdown-menu-right">';
                 echo '<ul class="">';
                     foreach(Yii::app()->params->languages as $key => $name){
