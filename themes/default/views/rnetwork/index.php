@@ -38,11 +38,13 @@
 <div class="card mb-4">
   <div class="card-body">
     <div class="row justify-content-md-center">
-      <div class="col-md-6 d-flex flex-wrap flex-md-nowrap justify-content-center">
-        <i class="mdi mdi-content-copy text-primary mr-2" id="rCopyLink"></i>
-        <div class="col-xl-11 col-lg-11 col-md-11 col-sm-12 text-center border rounded border-red">
-          <h6 id="personal_referral_link_network_head" class="mb-1"><?= Yii::t('controllers', 'rnetwork_index_lbl_personalLink');?></h6>
-          <h5><span id="rLink" message="<?=Yii::t('controllers', 'rnetwork_index_ntf_linkCopied');?>"><?= $this->createAbsoluteUrl('/register?referral_id='.Yii::app()->user->model()->referral_id); ?></span></h5>
+      <div class="col-md-6">
+        <div class="col-xl-11 col-lg-11 col-md-11 col-sm-12 text-center border rounded border-red d-flex flex-wrap flex-md-nowrap justify-content-center align-items-center m-auto p-2">
+          <div class="d-flex flex-column word-break">
+            <h6 id="personal_referral_link_network_head" class="mb-1"><?= Yii::t('controllers', 'rnetwork_index_lbl_personalLink');?></h6>
+            <h5><span id="rLink" message="<?=Yii::t('controllers', 'rnetwork_index_ntf_linkCopied');?>"><?= $this->createAbsoluteUrl('/register?referral_id='.Yii::app()->user->model()->referral_id); ?></span></h5>
+          </div>
+          <i class="mdi mdi-content-copy text-primary ml-2" id="rCopyLink"></i>
         </div>
       </div>
     </div>
