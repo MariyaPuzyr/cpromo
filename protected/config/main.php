@@ -127,7 +127,7 @@ $config = [
             'class' => 'CHttpSession',
             'autoStart' => true,
             'cookieParams' => [
-                'domain' => YII_DEBUG ? '.cpromo.rinion.ru' : '.circle.promo',
+                'domain' => YII_DEBUG ? '.circle.promo.local' : '.circle.promo',
                 'httpOnly' => true,
             ],
             'timeout' => 86400,
