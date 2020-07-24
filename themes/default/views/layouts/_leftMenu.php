@@ -13,7 +13,8 @@
                 <!--              <img src="assets/images/faces/face1.jpg" alt="profile">-->
               </div>
               <div class="nav-profile-text d-flex flex-column">
-                <span class="font-weight-bold mb-2"><?= Yii::t('core', 'menu_left_youID', ['#id' => $uData->referral_id]); ?></span>
+                <span class="font-weight-bold mb-2"><?= Yii::t('core', 'menu_left_youID_text'); ?></span>
+                <span class="font-weight-bold"><?= Yii::t('core', 'menu_left_youID', ['#id' => $uData->referral_id]); ?></span>
               </div>
               <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
             </a>
