@@ -5698,11 +5698,12 @@ a.tooltip1 span {
     white-space: nowrap;
     vertical-align: middle;
     flex-direction: row-reverse;
-    font-family: "ubuntu-medium", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     text-decoration: none;
 }
 .unifyMenu .active a {
     color: #b66dff;
+    font-family: 'ubuntu-medium', sans-serif;
 }
 .unifyMenu li:hover {
     background: #fcfcfc;
@@ -5867,9 +5868,23 @@ li.page-item.next .page-link::before {
 }
 .input-helper-checkbox:checked {background: #b66dff;}
 .form-label-group .checkbox input:not(:placeholder-shown) ~ label {display: flex;font-size: 0.875rem;line-height: 1.5;}
-#rCopyLink {font-size: 3em;cursor: pointer;}
+#rCopyLink {font-size: 2.5em;cursor: pointer;}
 .error-body {
     margin: -2.75rem -2.25rem;
     height: calc(100vh - 70px);
     width: calc(100% + 4.5rem);
 }
+.sidebar .nav.sub-menu li a.active {color: #b66dff;}
+.dropdown-item a:hover {text-decoration: none;color: #343a40;}
+.word-break {word-break:break-word;}
+.table thead th .sort-link .caret::after {
+    content: "\F4BA";
+    font: normal normal normal 24px/1 "Material Design Icons";
+    display: inline-block;
+    text-align: left;
+    position: absolute;
+    padding-left: 5px;
+    font-size: initial;
+}
+.support-form .form-control {font-size: 14px;height: 35px;}
+.support-form textarea {height: 80px !important;}

@@ -3,8 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="59845401-485c-48b8-9819-214754c51c07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/cc5bfecb/vendor/fancybox/jquery.fancybox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cc5bfecb/vendor/fancybox/jquery.fancybox.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/cc5bfecb/vendor/theme/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cc5bfecb/vendor/theme/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/cc5bfecb/vendor/theme/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cc5bfecb/vendor/theme/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/messages/en/controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/messages/en/controllers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/messages/en/core.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/messages/en/core.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/messages/ru/controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/messages/ru/controllers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/messages/ru/core.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/messages/ru/core.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/debug/index.data" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/debug/index.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/default/views/user/recovery.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/views/user/recovery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default/assets/vendor/theme/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/assets/vendor/theme/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default/views/dashboard/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/views/dashboard/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default/views/layouts/_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/views/layouts/_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default/views/layouts/_leftMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/views/layouts/_leftMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default/views/rnetwork/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/views/rnetwork/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default/views/support/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/default/views/support/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,105 +77,179 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="15" />
+          <entry key="css" value="18" />
           <entry key="gitignore" value="3" />
-          <entry key="js" value="6" />
+          <entry key="js" value="7" />
           <entry key="json" value="1" />
-          <entry key="php" value="95" />
+          <entry key="php" value="106" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="15" />
+          <entry key="CSS" value="18" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="6" />
-          <entry key="PHP" value="95" />
+          <entry key="JavaScript" value="7" />
+          <entry key="PHP" value="106" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1042" />
+          <entry key="css" value="1206" />
           <entry key="gitignore" value="30" />
-          <entry key="js" value="41" />
-          <entry key="php" value="2521" />
+          <entry key="js" value="48" />
+          <entry key="php" value="2665" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1042" />
-          <entry key="JavaScript" value="41" />
-          <entry key="PHP" value="2521" />
+          <entry key="CSS" value="1206" />
+          <entry key="JavaScript" value="48" />
+          <entry key="PHP" value="2665" />
           <entry key="PLAIN_TEXT" value="30" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/themes/default/views/user/login.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="52" column="87" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="87" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/custom.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/themes/default/views/user/recovery.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="687">
-                  <caret line="123" column="92" selection-start-line="64" selection-start-column="14" selection-end-line="123" selection-end-column="95" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/views/user/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="53" column="59" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/views/rnetwork/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="635">
+              <caret line="115" column="74" selection-start-line="115" selection-start-column="48" selection-end-line="115" selection-end-column="74" />
+              <folding>
+                <element signature="e#2980#3624#0#HTML" />
+                <element signature="e#3629#4288#0#HTML" />
+                <element signature="e#4293#4923#0#HTML" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/views/support/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/views/support/_viewMessage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/views/finance/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="107" column="60" selection-start-line="107" selection-start-column="60" selection-end-line="107" selection-end-column="60" />
+              <folding>
+                <element signature="n#div#0;n#div#1;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/views/layouts/_leftMenu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="11" column="208" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="208" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/views/layouts/_header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="36" column="110" selection-start-line="36" selection-start-column="90" selection-end-line="36" selection-end-column="110" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="566">
+              <caret line="5882" column="26" selection-start-line="5882" selection-start-column="26" selection-end-line="5882" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="5686" column="19" selection-start-line="5686" selection-start-column="19" selection-end-line="5686" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/messages/en/controllers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="185" column="4" selection-start-line="185" selection-start-column="4" selection-end-line="185" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/messages/ru/controllers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="200" column="27" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="27" />
+              <folding>
+                <element signature="e#95#101#1" expanded="true" />
+                <element signature="e#167#173#1" expanded="true" />
+                <element signature="e#235#241#1" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/views/dashboard/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>border-none</find>
-      <find>profilePhoto img-lg rounded-circle</find>
-      <find>font-weight-bold text-center-mobile</find>
-      <find>rnetwork_index_lbl_countRefsCoins</find>
-      <find>rCop</find>
-      <find>main.css</find>
-      <find>font-weight: bold</find>
-      <find>smal</find>
-      <find>dashboard_index_lbl_activ_profit</find>
-      <find>small text-right text-danger</find>
-      <find>number_format</find>
-      <find>bootstrap.widgets.TbButton</find>
-      <find>mdi-format-list-bulleted</find>
-      <find>id=&quot;nowCountClosed&quot;</find>
-      <find>nowCountClosed</find>
-      <find>btn btn-default btn-withoutBG langBtn</find>
-      <find>btn btn-default btn-withoutBG</find>
-      <find>UserRegisterForm_emai</find>
-      <find>form-text text-muted small</find>
-      <find>col-xl-6 col-lg-6 col-md-6 col-sm-6</find>
-      <find>rnetwork_index_btn_mainRegё</find>
-      <find>rnetwork_index_btn_mainReg</find>
       <find>font-weight-bold mobile-text-center</find>
       <find>csrf</find>
       <find>Ubuntu</find>
@@ -171,12 +258,35 @@
       <find>На продаже</find>
       <find>big-</find>
       <find>login-container</find>
+      <find>nav-profile-text d-flex flex-column</find>
+      <find>menu_left_youID</find>
+      <find>44px</find>
+      <find>56</find>
+      <find>sli</find>
+      <find>nav-item</find>
+      <find>.nav-item</find>
+      <find>auth</find>
+      <find>user_login_btn_signin</find>
+      <find>user_login_btn_recovery</find>
+      <find>nav-profile-text</find>
+      <find>menu_head_btn_logout</find>
+      <find>d-flex align-items-center justify-content-center flex-column flex-row h-100</find>
+      <find>mdi mdi-content-copy text-primary mr-2</find>
+      <find>Зарегистрировать нового</find>
+      <find>rnetwork_index_btn_mainReg</find>
+      <find>finance_index_lbl_incompletePays</find>
+      <find>finance_index_lbl_pays</find>
+      <find>Feedback_msg_cat</find>
+      <find>Feedback_msg_ca</find>
+      <find>textarea</find>
+      <find>textareaGroup</find>
     </findStrings>
     <replaceStrings>
       <replace>\</replace>
       <replace>mdi mdi-cached mr-2 text-success</replace>
       <replace>btn-inverse-dark btn-light</replace>
       <replace>mdi-format-list-numbered</replace>
+      <replace>li</replace>
     </replaceStrings>
     <dirStrings>
       <dir>E:\open_server_5_3_7_basic_full\OpenServer\domains\cpromo\themes\default\assets\vendor\theme\js</dir>
@@ -198,24 +308,17 @@
         <option value="$PROJECT_DIR$/../YiiFramework/framework/web/js/source/jquery.js" />
         <option value="$PROJECT_DIR$/themes/default/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/widgets/ExtMenu.php" />
-        <option value="$PROJECT_DIR$/themes/default/views/layouts/_leftMenu.php" />
         <option value="$PROJECT_DIR$/themes/default/views/news/index.php" />
         <option value="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbThumbnails.php" />
-        <option value="$PROJECT_DIR$/themes/default/assets/vendor/theme/js/common.js" />
         <option value="$PROJECT_DIR$/themes/default/assets/css/common.css" />
-        <option value="$PROJECT_DIR$/themes/default/views/layouts/_header.php" />
         <option value="$PROJECT_DIR$/themes/default/views/news/_newsBlank.php" />
-        <option value="$PROJECT_DIR$/themes/default/views/support/index.php" />
         <option value="$PROJECT_DIR$/themes/default/views/support/_viewMessage.php" />
         <option value="$PROJECT_DIR$/themes/default/views/system/page.php" />
         <option value="$PROJECT_DIR$/themes/default/views/finance/index.php" />
-        <option value="$PROJECT_DIR$/themes/default/views/dashboard/index.php" />
         <option value="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbActiveForm.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/themes/default/views/user/profile.php" />
-        <option value="$PROJECT_DIR$/themes/default/views/rnetwork/index.php" />
         <option value="$PROJECT_DIR$/themes/default/views/system/error.php" />
-        <option value="$PROJECT_DIR$/themes/default/assets/vendor/theme/css/style.css" />
         <option value="$PROJECT_DIR$/protected/widgets/views/LangSelect.php" />
         <option value="$PROJECT_DIR$/themes/default/views/exchange/index.php" />
         <option value="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbGridView.php" />
@@ -223,12 +326,21 @@
         <option value="$PROJECT_DIR$/protected/modules/user/models/UserLoginForm.php" />
         <option value="$PROJECT_DIR$/protected/config/main.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp40763/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css" />
-        <option value="$PROJECT_DIR$/protected/messages/ru/controllers.php" />
-        <option value="$PROJECT_DIR$/protected/messages/en/controllers.php" />
         <option value="$PROJECT_DIR$/themes/default/views/user/login.php" />
         <option value="$PROJECT_DIR$/themes/default/assets/vendor/theme/css/custom.css" />
         <option value="$PROJECT_DIR$/themes/default/views/user/recovery.php" />
+        <option value="$PROJECT_DIR$/themes/default/views/layouts/_leftMenu.php" />
+        <option value="$PROJECT_DIR$/themes/default/views/layouts/_header.php" />
+        <option value="$PROJECT_DIR$/protected/messages/en/core.php" />
+        <option value="$PROJECT_DIR$/protected/messages/ru/core.php" />
+        <option value="$PROJECT_DIR$/themes/default/assets/vendor/theme/js/common.js" />
+        <option value="$PROJECT_DIR$/themes/default/views/dashboard/index.php" />
+        <option value="$PROJECT_DIR$/themes/default/views/rnetwork/index.php" />
+        <option value="$PROJECT_DIR$/protected/messages/ru/controllers.php" />
+        <option value="$PROJECT_DIR$/protected/messages/en/controllers.php" />
+        <option value="$PROJECT_DIR$/themes/default/assets/vendor/theme/css/style.css" />
+        <option value="$PROJECT_DIR$/themes/default/views/support/index.php" />
+        <option value="$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css" />
       </list>
     </option>
   </component>
@@ -239,7 +351,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-449" />
+    <option name="x" value="2388" />
     <option name="y" value="-8" />
     <option name="width" value="974" />
     <option name="height" value="938" />
@@ -404,7 +516,57 @@
               <item name="cpromo" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="finance" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="rnetwork" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpromo" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cpromo" type="b2602c69:ProjectViewProjectNode" />
@@ -461,18 +623,18 @@
       <workItem from="1595399013442" duration="15663000" />
       <workItem from="1595419859280" duration="4978000" />
       <workItem from="1595488016299" duration="10379000" />
-      <workItem from="1595572080061" duration="6171000" />
+      <workItem from="1595572080061" duration="12352000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77961000" />
+    <option name="totallyTimeSpent" value="84142000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1296" height="1000" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26172706" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39563107" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -500,37 +662,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/widgets/ExtMenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/js/moment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/js/jquery.easing.1.3.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/layouts/_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/support/view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -558,13 +689,6 @@
     <entry file="file://$PROJECT_DIR$/themes/default/views/system/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-306" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/support/_viewMessage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbThumbnails.php">
@@ -595,20 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/support/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/finance/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="243" column="100" selection-start-line="243" selection-start-column="100" selection-end-line="243" selection-end-column="100" />
         </state>
       </provider>
     </entry>
@@ -654,20 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="707" column="22" selection-start-line="707" selection-start-column="9" selection-end-line="707" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="11899" column="24" lean-forward="true" selection-start-line="11899" selection-start-column="24" selection-end-line="11899" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/dashboard/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="87" column="33" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -732,31 +828,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/rnetwork/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2193">
           <caret line="129" column="48" selection-start-line="129" selection-start-column="48" selection-end-line="129" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="62" selection-start-column="62" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/messages/ru/controllers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
-          <caret line="141" column="37" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -788,16 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/messages/en/controllers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="142" column="113" selection-start-line="142" selection-start-column="113" selection-end-line="142" selection-end-column="113" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/user/models/UserLoginForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -812,13 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/views/user/profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
@@ -826,17 +884,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/views/user/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="52" column="87" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/views/user/recovery.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="687">
           <caret line="123" column="92" selection-start-line="64" selection-start-column="14" selection-end-line="123" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/user/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="53" column="59" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/layouts/_leftMenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="11" column="208" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="208" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/layouts/_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="36" column="110" selection-start-line="36" selection-start-column="90" selection-end-line="36" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/messages/ru/controllers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="200" column="27" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="27" />
+          <folding>
+            <element signature="e#95#101#1" expanded="true" />
+            <element signature="e#167#173#1" expanded="true" />
+            <element signature="e#235#241#1" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/messages/en/controllers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="185" column="4" selection-start-line="185" selection-start-column="4" selection-end-line="185" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/messages/en/core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="83" column="80" selection-start-line="83" selection-start-column="80" selection-end-line="83" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/messages/ru/core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="83" column="79" selection-start-line="83" selection-start-column="79" selection-end-line="83" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/dashboard/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/finance/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="107" column="60" selection-start-line="107" selection-start-column="60" selection-end-line="107" selection-end-column="60" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/rnetwork/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="115" column="74" selection-start-line="115" selection-start-column="48" selection-end-line="115" selection-end-column="74" />
+          <folding>
+            <element signature="e#2980#3624#0#HTML" />
+            <element signature="e#3629#4288#0#HTML" />
+            <element signature="e#4293#4923#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/support/_viewMessage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/support/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="5686" column="19" selection-start-line="5686" selection-start-column="19" selection-end-line="5686" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/assets/vendor/theme/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="5882" column="26" selection-start-line="5882" selection-start-column="26" selection-end-line="5882" selection-end-column="26" />
         </state>
       </provider>
     </entry>
