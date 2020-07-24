@@ -29,10 +29,10 @@
               </div>
             </div>
             <div class="card-col col-xl-8 col-lg-6 col-md-6 col-12">
-              <div class="d-flex align-items-center justify-content-center flex-column flex-row h-100">
-                <p class="mb-1 mt-2"><?= Yii::t('models', 'sprStatuses_attr_max_levels_full', ['#count' => $userData->statusAccount->max_levels]); ?> <?= $userData->status_account != Users::STATUSMAX ? CHtml::link(Yii::t('controllers', 'dashboard_index_btn_buyStatus'), '#', ['id' => 'buyStatusLink_board']) : ''; ?></p>
-                <p class="mb-1"><?= Yii::t('models', 'sprStatuses_attr_max_coin_buy_summ_full', ['#summ' => $userData->statusAccount->max_coin_buy_summ]); ?></p>
-                <p><?= Yii::t('models', 'sprStatuses_attr_out_full', ['#count' => $userData->statusAccount->out_count, '#period' => SprStatuses::getOutPeriodType($userData->statusAccount->out_count_period, true), '#summ' => $userData->statusAccount->out_max_summ]); ?></p>
+              <div class="d-flex justify-content-center flex-column flex-row h-100">
+                <p class="mb-1 display-5"><?= Yii::t('models', 'sprStatuses_attr_max_levels_full', ['#count' => $userData->statusAccount->max_levels]); ?> <?= $userData->status_account != Users::STATUSMAX ? CHtml::link(Yii::t('controllers', 'dashboard_index_btn_buyStatus'), '#', ['id' => 'buyStatusLink_board']) : ''; ?></p>
+                <p class="mb-1 display-5"><?= Yii::t('models', 'sprStatuses_attr_max_coin_buy_summ_full', ['#summ' => $userData->statusAccount->max_coin_buy_summ]); ?></p>
+                <p class="mb-0 display-5"><?= Yii::t('models', 'sprStatuses_attr_out_full', ['#count' => $userData->statusAccount->out_count, '#period' => SprStatuses::getOutPeriodType($userData->statusAccount->out_count_period, true), '#summ' => $userData->statusAccount->out_max_summ]); ?></p>
               </div>
             </div>
           </div>
