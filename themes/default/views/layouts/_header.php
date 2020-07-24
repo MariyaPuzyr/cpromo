@@ -14,7 +14,9 @@
                 <ul class="navbar-nav">
                   <li class="nav-item nav-profile dropdown">
                     <a class="nav-link dropdown-toggle" id="userSettings" href="#" data-toggle="dropdown" aria-expanded="false">
-                      <i class="mdi mdi-account d-lg-none d-md-none"></i>
+                      <div class="nav-profile-img">
+                          <?= CHtml::image($photo ? 'data:image/png;base64,'.base64_encode(file_get_contents(Yii::getPathOfAlias('webroot.uploads').'/user_photo/'.$photo)) : $this->assetsBase.'/img/no_photo.jpg'); ?>
+                      </div>
                       <div class="nav-profile-text">
                         <p class="mb-1 text-blackuser-name"><?= CHtml::encode(Yii::app()->user->model()->username); ?></p>
                       </div>
