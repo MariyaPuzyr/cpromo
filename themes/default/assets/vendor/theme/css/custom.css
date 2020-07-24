@@ -65,3 +65,55 @@
 textarea {
    height: auto !important;
 }
+
+/*style login page*/
+.login-page {
+    background: #f2edf3;
+    padding: 2.75rem 2.25rem;
+    width: 100%;
+    flex-grow: 1;
+}
+.login-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f2edf3;
+}
+.auth .auth-form-light {background: #ffffff;}
+.auth form .form-label-group .form-control {
+    background: transparent;
+    border-radius: 0;
+    font-size: .9375rem;
+    border: 1px solid #ebedf2;
+    height: 3.175rem;
+    padding: 0.94rem 1.94rem 0.94rem .75rem;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+    font-family: "ubuntu-regular", sans-serif;
+}
+.auth form .form-label-group .form-control:focus {outline: none; box-shadow: none;border-color: #80bdff;}
+.auth .brand-logo {margin-bottom: 1.5rem;}
+.auth .brand-logo img {width: 150px;}
+.auth h4 {font-family: "ubuntu-medium", sans-serif;    font-size: 1.13rem;}
+.auth form .auth-form-btn {
+    height: 50px;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    background: -webkit-gradient(linear, left top, right top, from(#da8cff), to(#9a55ff));
+    background: linear-gradient(to right, #da8cff, #9a55ff);
+    border: 0;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    font-family: "ubuntu-bold", sans-serif;
+    padding: 1rem 3rem;
+    border-radius: 0.1875rem;
+    text-transform: uppercase;
+}
+.auth form .auth-form-btn:focus {outline: none; box-shadow: none}
+.auth form .auth-form-btn:hover {opacity: .8;}
+.forgot-password {font-family: "ubuntu-light", sans-serif;}
+/*.forgot-password a {color: #b66dff;}*/
