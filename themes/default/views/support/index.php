@@ -14,6 +14,9 @@
                         'validateOnSubmit' => true,
                         'validateOnChange' => false,
                         'hideErrorMessage' => false,
+                    ],
+                    'htmlOptions' => [
+                        'class' => 'support-form'
                     ]
                 ]);
 
@@ -27,7 +30,7 @@
                     'label' => Yii::t('core', 'btn_send'),
                     'buttonType' => 'submit',
                     'htmlOptions' => [
-                        'class' => 'big-btn btn-gradient-primary'
+                        'class' => 'big-btn btn-gradient-primary col-md-3 m-auto'
                     ]
                 ]);
 
