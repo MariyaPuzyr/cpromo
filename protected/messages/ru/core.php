@@ -89,7 +89,7 @@ return [
     'menu_left_exchange' => 'Биржа',
     'menu_left_activities' => 'Показатели',
     'menu_left_newsAndMedia' => 'Новости и медиа',
-    'menu_left_support' => 'Поддержка',
+    'menu_left_support' => 'Сообщения',
     'menu_left_profile' => 'Профиль',
     'menu_left_youID_text' => 'Ваш ID:',
     'menu_left_youID' => '#id',

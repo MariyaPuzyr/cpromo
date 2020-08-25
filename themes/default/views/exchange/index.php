@@ -51,7 +51,7 @@
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>
           <div class="wrapper text-center text-sm-left">
-            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_countOrders'); ?></p>
+            <p class="card-text mb-0 text-nowrap"><?= Yii::t('controllers', 'exchange_index_lbl_countOrders'); ?></p>
             <div class="fluid-container">
               <h3 class="mb-0 font-weight-medium" id="nowCountClosed"><?= $count['closed'];?></h3>
             </div>
@@ -64,7 +64,7 @@
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>
           <div class="wrapper text-center text-sm-left">
-            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_countBuyClosed'); ?></p>
+            <p class="card-text mb-0 text-nowrap"><?= Yii::t('controllers', 'exchange_index_lbl_countBuyClosed'); ?></p>
             <div class="fluid-container">
               <h3 class="mb-0 font-weight-medium" id="nowCountClosed"><?= $count['count_buy_closed'];?></h3>
             </div>
@@ -77,7 +77,7 @@
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>
           <div class="wrapper text-center text-sm-left">
-            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_countSellClosed'); ?></p>
+            <p class="card-text mb-0 text-nowrap"><?= Yii::t('controllers', 'exchange_index_lbl_countSellClosed'); ?></p>
             <div class="fluid-container">
               <h3 class="mb-0 font-weight-medium" id="nowCountClosed"><?= $count['count_sell_closed'];?></h3>
             </div>
@@ -90,7 +90,7 @@
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>
           <div class="wrapper text-center text-sm-left">
-            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_emission'); ?></p>
+            <p class="card-text mb-0 text-nowrap"><?= Yii::t('controllers', 'exchange_index_lbl_emission'); ?></p>
             <div class="fluid-container">
               <h3 class="mb-0 font-weight-medium" id="nowCountClosed">45000000CP</h3>
             </div>
@@ -108,7 +108,7 @@
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi mdi-chart-bar text-primary mr-0 mr-sm-4 icon-lg"></i>
           <div class="wrapper text-center text-sm-left">
-            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_coinCourse'); ?></p>
+            <p class="card-text mb-0 text-nowrap"><?= Yii::t('controllers', 'exchange_index_lbl_coinCourse'); ?></p>
             <div class="fluid-container">
               <h3 class="mb-0 font-weight-medium" id="nowCourse"><?= $count['course'].'$'; ?></h3>
             </div>
@@ -121,7 +121,7 @@
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi mdi-chart-bar text-primary mr-0 mr-sm-4 icon-lg"></i>
           <div class="wrapper text-center text-sm-left">
-            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_coinCourseEnd'); ?></p>
+            <p class="card-text mb-0 text-nowrap"><?= Yii::t('controllers', 'exchange_index_lbl_coinCourseEnd'); ?></p>
             <div class="fluid-container">
               <h3 class="mb-0 font-weight-medium" id="nowCourse"><?= $count['course_end'].'$'; ?></h3>
             </div>
@@ -134,7 +134,7 @@
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi mdi-cart-plus text-primary mr-0 mr-sm-4 icon-lg"></i>
           <div class="wrapper text-center text-sm-left">
-            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_countBuy'); ?></p>
+            <p class="card-text mb-0 text-nowrap"><?= Yii::t('controllers', 'exchange_index_lbl_countBuy'); ?></p>
             <div class="fluid-container">
               <h3 class="mb-0 font-weight-medium" id="nowCountBuy"><?= number_format($count['buy'],2,'.','').'$'; ?></h3>
             </div>
@@ -147,7 +147,7 @@
         <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
           <i class="mdi mdi-format-list-numbered text-primary mr-0 mr-sm-4 icon-lg"></i>
           <div class="wrapper text-center text-sm-left">
-            <p class="card-text mb-0"><?= Yii::t('controllers', 'exchange_index_lbl_countOrdersNeedBuy'); ?></p>
+            <p class="card-text mb-0 text-nowrap"><?= Yii::t('controllers', 'exchange_index_lbl_countOrdersNeedBuy'); ?></p>
             <div class="fluid-container">
               <h3 class="mb-0 font-weight-medium" id="nowCountBuy"><?= $count['count_buy']; ?></h3>
             </div>

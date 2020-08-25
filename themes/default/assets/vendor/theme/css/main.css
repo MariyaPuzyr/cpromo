@@ -1277,9 +1277,11 @@ a.onoffcanvas-toggler i {
     border-bottom: 11px solid transparent;
 }
 
+/*
 .stats-widget .stats-widget-header {
     margin-bottom: 10px;
 }
+*/
 
 .stats-widget .stats-widget-header i {
     font-size: 36px;
@@ -5846,7 +5848,8 @@ li.page-item.next .page-link::before {
     font-size: 0;
     height: 100%;
 }
-.stats-widget {z-index: 2;position: relative;}
+.stats-widget {z-index: 2;position: relative; display: flex;flex-direction: column;height: 100%;}
+.stats-widget-body {display: flex;flex-direction: column;height: 100%;}
 .total.text-white .text-muted, .text-white h6 span {color: #ffffff !important;}
 
 @media (min-width: 1380px) {
@@ -5855,6 +5858,9 @@ li.page-item.next .page-link::before {
         -ms-flex: 0 0 25%;
         flex: 0 0 25%;
         max-width: 25%;
+    }
+    .col-xl-6.col-lg-6.col-md-6.col-sm-12.stretch-card .card .card-body {
+        padding: 2.5rem 1.5rem;
     }
 }
 .input-helper-checkbox {
@@ -5888,3 +5894,5 @@ li.page-item.next .page-link::before {
 }
 .support-form .form-control {font-size: 14px;height: 35px;}
 .support-form textarea {height: 80px !important;}
+.table thead th .sort-link {position: relative;}
+.persent-info .mb-3.mr-3.btn.btn-info:last-of-type{margin-right: 0 !important;}

@@ -34,6 +34,34 @@
   </div>
 </div>
 
+<div class="card mb-4">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+          <?php $this->widget('bootstrap.widgets.TbButton', [
+              'block' => true,
+              'context' => 'primary',
+              'label' => Yii::t('controllers', 'rnetwork_index_btn_invite'),
+              'htmlOptions' => [
+                  'class' => 'btn-gradient-danger',
+                  'id' => 'btn_invite'
+              ]
+          ]); ?>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+          <?php $this->widget('bootstrap.widgets.TbButton', [
+              'block' => true,
+              'context' => 'info',
+              'label' => Yii::t('controllers', 'rnetwork_index_btn_mainReg'),
+              'htmlOptions' => [
+                  'class' => 'btn-gradient-success',
+                  'id' => 'btn_mainRegister'
+              ]
+          ]);?>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="card mb-4">
   <div class="card-body">
@@ -50,6 +78,7 @@
     </div>
   </div>
 </div>
+
 
 <div class="card card-statistics mb-4">
   <div class="row">
@@ -95,44 +124,14 @@
   </div>
 </div>
 
-<div class="card mb-4">
-  <div class="card-body">
-    <div class="row">
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-          <?php $this->widget('bootstrap.widgets.TbButton', [
-              'block' => true,
-              'context' => 'primary',
-              'label' => Yii::t('controllers', 'rnetwork_index_btn_invite'),
-              'htmlOptions' => [
-                  'class' => 'btn-gradient-danger',
-                  'id' => 'btn_invite'
-              ]
-          ]); ?>
-      </div>
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-          <?php $this->widget('bootstrap.widgets.TbButton', [
-              'block' => true,
-              'context' => 'info',
-              'label' => Yii::t('controllers', 'rnetwork_index_btn_mainReg'),
-              'htmlOptions' => [
-                  'class' => 'btn-gradient-success',
-                  'id' => 'btn_mainRegister'
-              ]
-          ]);?>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 <?php if($inviteGrid): ?>
   <div class="card">
     <div class="card-body">
       <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
-          <div class="card bg-white">
-            <div class="card-header"><strong><?= Yii::t('controllers', 'rnetwork_index_lbl_inviteOutList'); ?></strong></div>
-            <div class="card-body">
+          <div class="card bg-white border-none">
+            <div class="card-body p-0">
+              <h4 class="card-header pl-0"><?= Yii::t('controllers', 'rnetwork_index_lbl_inviteOutList'); ?></h4>
                 <?php $this->widget('bootstrap.widgets.TbGridView', [
                     'id' => 'inviteOutList',
                     'dataProvider' => $inviteGrid,
@@ -182,9 +181,10 @@
     <div class="row gutters mt-3">
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
           <?php if($tabs): ?>
-            <div class="card bg-white">
-              <div class="card-header"><strong><?= Yii::t('controllers', 'rnetwork_index_lbl_relationList'); ?></strong></div>
-              <div class="card-body">
+            <div class="card bg-white border-none">
+<!--              <div class="card-header"><strong>--><?//= Yii::t('controllers', 'rnetwork_index_lbl_relationList'); ?><!--</strong></div>-->
+              <div class="card-body p-0">
+                <h4 class="card-header pl-0"><?= Yii::t('controllers', 'rnetwork_index_lbl_relationList'); ?></h4>
                   <?php
                   if(!$mobileDetect->isMobile() && !$mobileDetect->isIphone()):
                       $this->widget('ExtPillsTabs', [
@@ -215,9 +215,10 @@
               </div>
             </div>
 
-            <div class="card bg-white mt-3 text-left">
-              <div class="card-header"><strong><?= Yii::t('controllers', 'rnetwork_index_lbl_relationList2'); ?></strong></div>
+            <div class="card bg-white mt-3 text-left border-none">
+<!--              <div class="card-header"><strong>--><?//= Yii::t('controllers', 'rnetwork_index_lbl_relationList2'); ?><!--</strong></div>-->
               <div class="card-body">
+                <h4 class="card-header pl-0"><?= Yii::t('controllers', 'rnetwork_index_lbl_relationList2'); ?></h4>
                   <?php
                   Yii::app()->clientScript->registerScriptFile($this->assetsBase.'/vendor/bootstraptree/bootstrap-treeview.js');
                   Yii::app()->clientScript->registerCssFile($this->assetsBase.'/vendor/bootstraptree/bootstrap-treeview.css');
@@ -242,9 +243,10 @@
     <div class="card-body">
       <div class="row gutters mt-3">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
-          <div class="card bg-white">
-            <div class="card-header text-danger"><strong><?= Yii::t('controllers', 'rnetwork_index_lbl_relationOutList', ['#help' => '<span style="vertical-align: text-top" class="text-danger far fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="'.Yii::t('controllers', 'rnetwork_index_lbl_refOut_tooltip').'"></span>']); ?></strong><?= Yii::app()->user->finance->balance != 0 &&  $userData->status_account != Users::STATUSMAX ? CHtml::link(Yii::t('controllers', 'dashboard_index_btn_buyStatus'), '#', ['id' => 'buyStatusLink_rnet']) : ''; ?></div>
+          <div class="card bg-white border-none">
+<!--            <div class="card-header text-danger"><strong>--><?//= Yii::t('controllers', 'rnetwork_index_lbl_relationOutList', ['#help' => '<span style="vertical-align: text-top" class="text-danger far fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="'.Yii::t('controllers', 'rnetwork_index_lbl_refOut_tooltip').'"></span>']); ?><!--</strong>--><?//= Yii::app()->user->finance->balance != 0 &&  $userData->status_account != Users::STATUSMAX ? CHtml::link(Yii::t('controllers', 'dashboard_index_btn_buyStatus'), '#', ['id' => 'buyStatusLink_rnet']) : ''; ?><!--</div>-->
             <div class="card-body">
+              <h4 class="card-header pl-0"><strong><?= Yii::t('controllers', 'rnetwork_index_lbl_relationOutList', ['#help' => '<span style="vertical-align: text-top" class="text-danger far fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="'.Yii::t('controllers', 'rnetwork_index_lbl_refOut_tooltip').'"></span>']); ?></strong><?= Yii::app()->user->finance->balance != 0 &&  $userData->status_account != Users::STATUSMAX ? CHtml::link(Yii::t('controllers', 'dashboard_index_btn_buyStatus'), '#', ['id' => 'buyStatusLink_rnet']) : ''; ?></h4>
                 <?php
                 if(!$mobileDetect->isMobile() && !$mobileDetect->isIphone()):
                     $this->widget('ExtPillsTabs', [

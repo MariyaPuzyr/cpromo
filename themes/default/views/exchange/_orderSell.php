@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center persent-info">
                 <label><?= Yii::t('controllers', 'exchange_buy_lbl_percent_count'); ?></label><br />
                 <?php 
                     foreach ($model::PERCENT_TO_SELL_COUNT as $key => $val) {

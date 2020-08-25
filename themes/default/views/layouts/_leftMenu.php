@@ -38,7 +38,7 @@
         ]); ?>
       <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
-          <span class="menu-title">Articles</span>
+          <span class="menu-title">О нас</span>
           <i class="menu-arrow"></i>
           <i class="mdi mdi-book-open-page-variant menu-icon"></i>
         </a>
